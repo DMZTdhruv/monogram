@@ -17,7 +17,7 @@ const HeroSection = () => {
              pt-[20px]
              lg:ml-[50px] 
              text-body-text-secondary md:text-[18px] 
-             leading-[25px] lg:leading-[35px]"
+             leading-[28px] lg:leading-[35px]"
         >
           A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher search-engine
           ranking and a more positive, responsive end-user experience.
@@ -39,7 +39,7 @@ const HeroSection = () => {
             alt="hero_rectangle_1"
             fill
             unoptimized
-            className="lg:opacity-100   opacity-80"
+            className="lg:opacity-100   opacity-40"
             src="/assets/hero_rectangle_1.png"
           />
           <div className="absolute top-[314px] left-[164px] w-full h-full z-[10] rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
@@ -49,7 +49,7 @@ const HeroSection = () => {
             fill
             alt="hero_rectangle_2"
             unoptimized
-            className="lg:opacity-100   opacity-80"
+            className="lg:opacity-100   opacity-40"
             src="/assets/hero_rectangle_2.png"
           />
           <div className="absolute top-[302px] left-[158px] w-full h-full z-[10] rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
