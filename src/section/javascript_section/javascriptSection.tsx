@@ -31,19 +31,17 @@ const JavascriptSection = () => {
 `;
 
   return (
-    <section
-      id="javascript_Section"
-      className="relative border border-red-800 lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full"
-    >
-      <div className="absolute z-[1] text-white  w-full top-[92px] text-center">
+    <section id="javascript_Section" className="relative lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full">
+      <div className="z-[1] md:space-y-[44px] space-y-[22px] text-white relative h-full border border-red-500 w-full pt-[92px] text-center">
         <h2 className="font-black md:text-[100px] text-[50px] lg:text-[133px]">javascript</h2>
         <p className="md:leading-[35px] px-6  leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
-          <br className="hidden md:bloc " />
+          <br className="hidden md:block " />
           JavaScript libraries and frameworks, such as Algolia and Next.js.
         </p>
+        <Image height={466} width={246} alt="squiggly_arrowJS" src="/assets/squiggly_arrowJS.svg" className="absolute lg:block hidden right-[10%] top-[30%]" />
       </div>
-      <div className="relative w-full ">
+      <div className="absolute top-0 z-[-1] w-full ">
         <div className=" lg:h-[893px] mx-auto md:h-[70vh] h-[50vh] relative lg:w-[1397px] md:w-full  ">
           <Image
             fill
@@ -54,7 +52,7 @@ const JavascriptSection = () => {
           />
         </div>
       </div>
-      <div className="absolute border border-red-800 left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 md:top-[100%] top-[106%]">
+      <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 md:top-[105%] top-[109%]">
         <div className="w-[803px] h-[808px] relative ">
           <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.svg" />
           <div className="screen top-[52px] left-[81px]  absolute z-10 px-[47px] pt-[47px] overflow-hidden text-[#44DBFF] w-[642px] h-[430px] bg-[#1A1A1A] text-[8px] leading-[15px] rounded-[30px]">
