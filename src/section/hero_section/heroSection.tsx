@@ -3,10 +3,10 @@ import "./heroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full xl:p-0 lg:p-[50px]">
+    <div className="relative min-h-svh max-w-7xl mx-auto xl:p-0 lg:p-[50px]">
       {/* Hero section intro */}
       <div className="text-center xl:text-left md:pt-[153px] pt-[25vh]">
-        <h1 className="font-black leading-[100%] md:text-[100px] text-[80px] lg:text-[133px]">
+        <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
           jamstack <br className="block lg:hidden" />
           <span className="gradient-text leading-[100%]">101</span>
         </h1>

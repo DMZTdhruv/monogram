@@ -1,0 +1,25 @@
+/* Implementation using text-shadow */
+/* .text_shadow {
+    text-shadow: 
+        0px 0px 10px #59CDFF,  
+        0px 0px 40px rgba(89, 205, 255, 0.8), 
+        0px 0px 60px rgba(89, 205, 255, 0.6), 
+        0px 0px 80px rgba(89, 205, 255, 0.4), 
+        0px 0px 120px rgba(89, 205, 255, 0.2), 
+        0px 0px 180px rgba(89, 205, 255, 0.1);
+} */
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+.blink_animation {
+    animation: blink 0.8s infinite; 
+}
+  
+
