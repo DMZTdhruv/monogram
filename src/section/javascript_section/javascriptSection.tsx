@@ -31,10 +31,7 @@ const JavascriptSection = () => {
 `;
 
   return (
-    <section
-      id="javascript_Section"
-      className="relative  lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full"
-    >
+    <section id="javascript_Section" className="relative  lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full">
       <div className="absolute z-[1] text-white  w-full top-[92px] text-center">
         <h2 className="font-black md:text-[100px] text-[50px] lg:text-[133px]">javascript</h2>
         <p className="md:leading-[35px] px-6  leading-relaxed md:text-[18px] text-[13px]">
@@ -45,7 +42,13 @@ const JavascriptSection = () => {
       </div>
       <div className="relative w-full ">
         <div className=" lg:h-[893px] mx-auto md:h-[70vh] h-[50vh] relative lg:w-[1397px] md:w-full  ">
-          <Image fill unoptimized alt="hello world" className=" sm:object-contain object-cover" src={"/assets/orange_square.png"} />
+          <Image
+            fill
+            unoptimized
+            alt="hello world"
+            className=" sm:object-contain object-cover"
+            src={"/assets/orange_square.png"}
+          />
         </div>
       </div>
       <div className="absolute left-1/2 lg:scale-100  scale-50 -translate-x-1/2 lg:-bottom-[50%] md:-bottom-[80%] -bottom-[120%]">

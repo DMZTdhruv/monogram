@@ -3,9 +3,9 @@ import "./heroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-svh max-w-7xl mx-auto xl:p-0 lg:p-[50px]">
+    <div className="relative overflow-x-hidden min-h-svh max-w-7xl mx-auto xl:p-0 lg:p-[50px]">
       {/* Hero section intro */}
-      <div className="text-center xl:text-left md:pt-[153px] pt-[25vh]">
+      <div className="text-center  xl:text-left md:pt-[153px] pt-[25vh]">
         <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
           jamstack <br className="block lg:hidden" />
           <span className="gradient-text leading-[100%]">101</span>
@@ -32,7 +32,7 @@ const HeroSection = () => {
       {/* Gradient cards image with blur cards div */}
       <div
         draggable={false}
-        className="cards transition-opacity absolute flex gap-[46px] top-[0%] left-[50%] -translate-x-1/2 xl:-translate-x-0 xl:-right-[50px] xl:top-[153px] scale-50 xl:scale-100 z-[-1] "
+        className="cards transition-opacity absolute flex gap-[46px] top-[0%] left-[50%] -translate-x-1/2 xl:-translate-x-0 xl:-right-[50px] xl:top-[153px] scale-50 xl:scale-100 z-[-1]"
       >
         <div className="relative w-[280px] h-[629px] mt-[193px]">
           <Image
