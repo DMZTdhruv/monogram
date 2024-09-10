@@ -31,12 +31,12 @@ const JavascriptSection = () => {
 `;
 
   return (
-    <section id="javascript_Section" className="relative lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full">
-      <div className="z-[1] md:space-y-[44px] space-y-[22px] text-white relative h-full w-full md:pt-[92px] pt-[62px] text-center">
+    <section id="javascript_Section" className="relative z-[1] lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full">
+      <div className="z-[1] md:space-y-[33px]  text-white relative h-full w-full md:pt-[92px] pt-[18px] text-center">
         <h2 className="font-black md:text-[100px] text-[50px] lg:text-[133px]">javascript</h2>
-        <p className="md:leading-[35px] px-6  leading-relaxed md:text-[18px] text-[13px]">
+        <p className="md:leading-[35px] px-6 font-[300] leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
-          <br className="hidden md:block " />
+          <br className="hidden sm:block " />
           JavaScript libraries and frameworks, such as Algolia and Next.js.
         </p>
         <Image
@@ -48,7 +48,7 @@ const JavascriptSection = () => {
         />
       </div>
       <div className="absolute top-0 z-[-1] w-full ">
-        <div className=" lg:h-[893px] mx-auto md:h-[70vh] h-[50vh] relative lg:w-[1397px] md:w-full  ">
+        <div className=" lg:h-[893px] mx-auto md:h-[70vh] h-[50vh] relative xl:w-[1397px] lg:w-[90vw] md:w-full  ">
           <Image
             fill
             unoptimized
@@ -58,9 +58,9 @@ const JavascriptSection = () => {
           />
         </div>
       </div>
-      <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 md:top-[109%] top-[100%]">
+      <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%] ">
         <div className="w-[803px] h-[808px] relative ">
-          <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.svg" />
+          <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.png" />
           <div className="screen top-[52px] left-[81px]  absolute z-10 px-[47px] pt-[47px] overflow-hidden text-[#44DBFF] w-[642px] h-[430px] bg-[#1A1A1A] text-[8px] leading-[15px] rounded-[30px]">
             <div className="relative">
               <pre className="absolute z-[10] top-0 left-0">{codeString}</pre>
