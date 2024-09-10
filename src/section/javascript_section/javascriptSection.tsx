@@ -54,7 +54,7 @@ const JavascriptSection = () => {
           />
         </div>
       </div>
-      <div className="absolute border border-red-800 left-1/2 lg:scale-100 scale-[0.4] -translate-x-1/2 top-[92px]">
+      <div className="absolute border border-red-800 left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 md:top-[100%] top-[106%]">
         <div className="w-[803px] h-[808px] relative ">
           <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.svg" />
           <div className="screen top-[52px] left-[81px]  absolute z-10 px-[47px] pt-[47px] overflow-hidden text-[#44DBFF] w-[642px] h-[430px] bg-[#1A1A1A] text-[8px] leading-[15px] rounded-[30px]">
