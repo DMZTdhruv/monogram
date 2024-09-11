@@ -4,10 +4,10 @@ import TechSection from "@/section/tech_section/techSection";
 
 export default function Home() {
   return (
-    <section id="hero" className="w-full ">
+    <main id="main" className="w-full ">
       <HeroSection />
       <JavascriptSection />
       <TechSection />
-    </section>
+    </main>
   );
 }

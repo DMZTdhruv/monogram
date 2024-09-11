@@ -3,7 +3,7 @@ import "./heroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-svh max-w-7xl mx-auto xl:p-0 lg:px-[50px]">
+    <div className="relative max-w-7xl mx-auto responsive_height xl:p-0 lg:px-[50px]">
       {/* Hero section intro */}
       <div className="text-center xl:text-left md:pt-[153px] pt-[25vh]">
         <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
@@ -18,8 +18,8 @@ const HeroSection = () => {
       </div>
 
       {/* mouse image */}
-      <div className="hidden xl:block relative w-[84px] h-[580px] left-[256px] mt-[78px]">
-        <Image alt="mouse" fill unoptimized src="/assets/mouse_line.png" />
+      <div draggable={false} className="hidden xl:block relative w-[84px] h-[580px] left-[256px] mt-[78px]">
+        <Image draggable={false} alt="mouse" fill unoptimized src="/assets/mouse_line.png" />
       </div>
 
       {/* Gradient cards image with blur cards div */}
@@ -35,7 +35,7 @@ const HeroSection = () => {
             className="lg:opacity-100 opacity-40"
             src="/assets/hero_rectangle_1.png"
           />
-          <div className="absolute top-[314px] left-[164px] w-full h-full z-[10] rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
+          <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
         </div>
         <div className="relative w-[280px] h-[629px]">
           <Image
@@ -45,7 +45,7 @@ const HeroSection = () => {
             className="lg:opacity-100 opacity-40"
             src="/assets/hero_rectangle_2.png"
           />
-          <div className="absolute top-[302px] left-[158px] w-full h-full z-[10] rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
+          <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
         </div>
       </div>
     </div>

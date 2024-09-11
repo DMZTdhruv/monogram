@@ -28,3 +28,10 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .responsive_height {
+    min-height: 100svh;
+  }
+}
+
+

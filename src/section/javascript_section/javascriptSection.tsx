@@ -32,7 +32,7 @@ const JavascriptSection = () => {
 
   return (
     <section id="javascript_Section" className="relative z-[1] lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full">
-      <div className="z-[1] md:space-y-[33px]  text-white relative h-full w-full md:pt-[92px] pt-[18px] text-center">
+      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[92px] pt-[18px] text-center">
         <h2 className="font-black md:text-[100px] text-[50px] lg:text-[133px]">javascript</h2>
         <p className="md:leading-[35px] px-6 font-[300] leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
@@ -44,7 +44,7 @@ const JavascriptSection = () => {
           width={246}
           alt="squiggly_arrowJS"
           src="/assets/squiggly_arrowJS.svg"
-          className="absolute lg:block hidden right-[10%] top-[30%]"
+          className="absolute lg:block hidden right-[5%] top-[30%]"
         />
       </div>
       <div className="absolute top-0 z-[-1] w-full ">
@@ -58,6 +58,7 @@ const JavascriptSection = () => {
           />
         </div>
       </div>
+      {/* Using scale properties to make a responsive design here */}
       <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%] ">
         <div className="w-[803px] h-[808px] relative ">
           <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.png" />
