@@ -15,7 +15,7 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
   const firstRow = useRef<HTMLDivElement | null>(null);
   const secondRow = useRef<HTMLDivElement | null>(null);
 
-  let yPercent = 0;
+  let yPercent = -100;
   const direction = 1;
 
   useGSAP(
@@ -29,8 +29,8 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
 
   const animateColumn = useCallback(() => {
     if (firstRow.current && secondRow.current) {
-      if (yPercent >= 100) {
-        yPercent = 0;
+      if (yPercent >= 0) {
+        yPercent = -100;
       }
       gsap.set(firstRow.current, { yPercent: yPercent });
       gsap.set(secondRow.current, { yPercent: yPercent });
@@ -40,21 +40,14 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
   }, [speed]);
 
   return (
-    <div className={`${className}`}>
-      <div
-        ref={firstRow}
-        className="w-full md:pb-[200px] pb-[0px]  flex flex-col md:gap-[200px] gap-[0px] items-center"
-      >
-        {children}
-        {children}
+    <div className={`${className} relative  w-full`}>
+      <div ref={firstRow} className="w-full md:pt-[200px] pb-[0px] flex flex-col md:gap-[200px] gap-[0px] items-center">
         {children}
       </div>
       <div
         ref={secondRow}
-        className="w-full  md:pb-[200px]  pb-[0px]  absolute flex flex-col md:gap-[200px] gap-[0px]  items-center"
+        className="w-full md:pt-[200px] pb-[0px] absolute flex flex-col md:gap-[200px] gap-[0px]  items-center"
       >
-        {children}
-        {children}
         {children}
       </div>
     </div>
@@ -62,3 +55,9 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
 };
 
 export default InfiniteColumnEffect;
+
+// TODO
+// [] -> Add dynamic height to the logos
+// [] -> change the logos to png if more performant
+// [] -> slow down the speed
+// [] -> try the ticker method

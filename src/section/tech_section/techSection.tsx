@@ -3,34 +3,39 @@
 import InfiniteColumnEffect from "@/components/InfiniteColumnEffect";
 import NextJsLogo from "@/components/logos/NextJsLogo";
 import ReactLogo from "@/components/logos/ReactLogo";
-import SvelteLogo from "@/components/logos/SvelteLogo";
+import VueLogo from "@/components/logos/VueLogo";
 
 const TechSection = () => {
-  const defaultClassnames = "flex-1 md:mt-[-400%] mt-[-700%] relative border-dashed border-x-2 border-[#E8E8E8]/20";
+  const defaultClassnames = "flex-1 border-dashed border-[#E8E8E8]/20";
   return (
-    <div className="lg:h-[200vh] overflow-hidden h-[90vh] w-full mt-[-150px] relative z-[-1] bg-[#151515]">
+    <div className="md:h-[200vh] h-[90vh] overflow-hidden w-full mt-[-200px] relative z-[-1] bg-[#151515]">
       <div className="flex h-full lg:px-[116px] md:px-[60px] px-[16px]">
-        <InfiniteColumnEffect className={`${defaultClassnames} md:block hidden`} speed={0.18}>
-          <NextJsLogo />
-          <SvelteLogo />
-          <ReactLogo />
-        </InfiniteColumnEffect>
-        <InfiniteColumnEffect className={`${defaultClassnames}`} speed={0.08}>
-          <SvelteLogo />
-          <NextJsLogo />
-          <ReactLogo />
-        </InfiniteColumnEffect>
-        <InfiniteColumnEffect className={`${defaultClassnames} `} speed={0.2}>
+        {/* First column (fastest) */}
+        <InfiniteColumnEffect className={`${defaultClassnames} border-x-2`} speed={0.45}>
           <ReactLogo />
           <NextJsLogo />
-          <SvelteLogo />
+          <VueLogo />
         </InfiniteColumnEffect>
-        <InfiniteColumnEffect className={`${defaultClassnames}`} speed={0.06}>
+        {/* Second column (slower) */}
+        <InfiniteColumnEffect className={`${defaultClassnames} md:block hidden`} speed={0.15}>
+          <VueLogo />
+          <ReactLogo />
           <NextJsLogo />
-          <SvelteLogo />
+        </InfiniteColumnEffect>
+        {/* Third column (slowest) */}
+        <InfiniteColumnEffect className={`${defaultClassnames} md:block hidden border-l-2`} speed={0.1}>
+          <ReactLogo />
+          <VueLogo />
+          <NextJsLogo />
+        </InfiniteColumnEffect>
+        {/* Fourth column (fast but slower than first) */}
+        <InfiniteColumnEffect className={`${defaultClassnames} md:block hidden border-x-2`} speed={0.35}>
+          <VueLogo />
+          <NextJsLogo />
           <ReactLogo />
         </InfiniteColumnEffect>
       </div>
+
       <div className="bg-gradient-to-b absolute bottom-0 h-[50vh] w-full from-slate-50/0 to-neutral-900" />
     </div>
   );
