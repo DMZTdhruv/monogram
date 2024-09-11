@@ -11,7 +11,7 @@ const TechSection = () => {
     <div className="md:h-[200vh] h-[90vh] overflow-hidden w-full mt-[-200px] relative z-[-1] bg-[#151515]">
       <div className="flex h-full lg:px-[116px] md:px-[60px] px-[16px]">
         {/* First column (fastest) */}
-        <InfiniteColumnEffect className={`${defaultClassnames} border-x-2`} speed={0.45}>
+        <InfiniteColumnEffect className={`${defaultClassnames} border-x-2`} speed={0.35}>
           <ReactLogo />
           <NextJsLogo />
           <VueLogo />
@@ -29,7 +29,7 @@ const TechSection = () => {
           <NextJsLogo />
         </InfiniteColumnEffect>
         {/* Fourth column (fast but slower than first) */}
-        <InfiniteColumnEffect className={`${defaultClassnames} md:block hidden border-x-2`} speed={0.35}>
+        <InfiniteColumnEffect className={`${defaultClassnames} md:block hidden border-x-2`} speed={0.25}>
           <VueLogo />
           <NextJsLogo />
           <ReactLogo />
