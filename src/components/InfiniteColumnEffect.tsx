@@ -47,11 +47,13 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
       >
         {children}
         {children}
+        {children}
       </div>
       <div
         ref={secondRow}
         className="w-full  md:pb-[200px]  pb-[0px]  absolute flex flex-col md:gap-[200px] gap-[0px]  items-center"
       >
+        {children}
         {children}
         {children}
       </div>
