@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CmsGlobe = dynamic(() => import("@/components/cms/scene"), {
   ssr: false,
-  loading: () => <Image fill src="/assets/circle.png" alt="3d circle" />,
+  loading: () => <Image fill src="/assets/circle.webp" alt="3d circle" />,
 });
 
 const Cms = () => {
@@ -22,13 +22,13 @@ const Cms = () => {
         <div className="relative mx-auto max-h-[914px] xl:h-auto max-w-[914px] xl:w-[100vw] aspect-square  lg:h-[714px]  lg:w-[714px] md:w-[500px] md:h-[500px] w-[300px] h-[300px]">
           <Image
             fill
-            src="/assets/glow.png"
+            src="/assets/glow.webp"
             className="md:scale-125 scale-110 z-[-1] -translate-y-2 -translate-x-2"
             alt="3d circle"
           />
           <Image
             fill
-            src="/assets/glow_2.png"
+            src="/assets/glow_2.webp"
             className="md:scale-150 scale-125 z-[-1] -translate-y-2 -translate-x-2"
             alt="3d circle"
           />
@@ -40,3 +40,8 @@ const Cms = () => {
 };
 
 export default Cms;
+
+// todo list
+// [] -> make all the images to png
+// [] -> listen to theo yap about seo 100
+// [] -> fix the positing about the image blob

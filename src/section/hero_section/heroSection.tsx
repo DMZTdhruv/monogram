@@ -20,7 +20,7 @@ const HeroSection = () => {
 
         {/* mouse image */}
         <div draggable={false} className="hidden xl:block relative w-[84px] h-[580px] left-[256px] mt-[78px]">
-          <Image draggable={false} alt="mouse" fill unoptimized src="/assets/mouse_line.png" />
+          <Image draggable={false} alt="mouse" fill unoptimized src="/assets/mouse_line.webp" />
         </div>
 
         <div
@@ -33,7 +33,7 @@ const HeroSection = () => {
               fill
               unoptimized
               className="lg:opacity-100 opacity-40"
-              src="/assets/hero_rectangle_1.png"
+              src="/assets/hero_rectangle_1.webp"
             />
             <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
           </div>
@@ -43,7 +43,7 @@ const HeroSection = () => {
               alt="hero_rectangle_2"
               unoptimized
               className="lg:opacity-100 opacity-40"
-              src="/assets/hero_rectangle_2.png"
+              src="/assets/hero_rectangle_2.webp"
             />
             <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
           </div>

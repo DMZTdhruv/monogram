@@ -58,13 +58,13 @@ const JavascriptSection = () => {
             unoptimized
             alt="hello world"
             className=" sm:object-contain object-cover"
-            src={"/assets/orange_square.png"}
+            src={"/assets/orange_square.webp"}
           />
         </div>
       </div>
       <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%] ">
         <div className="w-[803px] h-[808px] relative ">
-          <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.png" />
+          <Image fill unoptimized alt="retro computer" src="/assets/retro_computer.webp" />
           <div className="screen top-[52px] left-[81px]  absolute z-10 px-[47px] pt-[47px] overflow-hidden text-[#44DBFF] w-[642px] h-[430px] bg-[#1A1A1A] text-[8px] leading-[15px] rounded-[30px]">
             <div className="relative">
               <pre className="absolute z-[10] top-0 left-0">{codeString}</pre>

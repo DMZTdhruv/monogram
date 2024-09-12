@@ -24,11 +24,11 @@ const MarkUpSection = () => {
         {/* Gradient cards image with blur cards div */}
         <div className="absolute flex gap-[46px] z-[-1] top-[0%] md:top-[200px] lg:top-[400px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-[50px] lg:-translate-x-0 scale-[0.4] md:scale-75 lg:scale-100">
           <div className="relative w-[280px] h-[629px] mt-[193px]">
-            <Image alt="hero_rectangle_1" fill className="opacity-40 lg:opacity-100" src="/assets/markup_rect_1.png" />
+            <Image alt="hero_rectangle_1" fill className="opacity-40 lg:opacity-100" src="/assets/markup_rect_1.webp" />
             <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-blur-3xl backdrop-filter" />
           </div>
           <div className="relative w-[280px] h-[629px]">
-            <Image alt="hero_rectangle_2" fill className="opacity-40 lg:opacity-100" src="/assets/markup_rect_2.png" />
+            <Image alt="hero_rectangle_2" fill className="opacity-40 lg:opacity-100" src="/assets/markup_rect_2.webp" />
             <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-blur-3xl backdrop-filter" />
           </div>
         </div>
