@@ -46,12 +46,12 @@ for debugging css xD
 @media (max-width: 1280px) and (orientation: portrait) {
   .responsive_height--markup {
     height: 100svh;
-    min-height: 800px; /* Use 100svh for portrait */
+    min-height: 700px; /* Use 100svh for portrait */
   }
 }
 
 @media (max-width: 1280px) and (orientation: landscape) {
   .responsive_height--markup {
-    height: 300px; /* Use 800px for landscape */
+    min-height: 1000px; /* Use 800px for landscape */
   }
 }

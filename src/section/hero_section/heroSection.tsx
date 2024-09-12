@@ -3,10 +3,10 @@ import "./heroSection.css";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full overflow-hidden">
-      <div className="relative max-w-7xl  mx-auto responsive_height--hero xl:p-0 lg:px-[50px]">
+    <section className="relative w-full  overflow-hidden">
+      <div className="relative max-w-7xl lg:block flex flex-col items-center justify-center   mx-auto responsive_height--hero xl:p-0 lg:px-[50px]">
         {/* Hero section intro */}
-        <div className="text-center xl:text-left md:pt-[153px] pt-[25vh]">
+        <div className="text-center xl:text-left lg:pt-[153px] ">
           <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
             jamstack <br className="block lg:hidden" />
             <span className="gradient-text leading-[100%]">101</span>
@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         <div
           draggable={false}
-          className="cards absolute flex gap-[46px] top-[0%] left-[50%] -translate-x-1/2 xl:left-auto xl:-translate-x-0 xl:right-[50px] xl:top-[153px] scale-[0.4] md:scale-75 xl:scale-100 z-[-1]"
+          className="cards absolute flex gap-[46px] lg:top-[0%] top-[50%] lg:translate-y-0 -translate-y-1/2 left-[50%] -translate-x-1/2 xl:left-auto xl:-translate-x-0 xl:right-[50px] xl:top-[153px] scale-[0.4] md:scale-75 xl:scale-100 z-[-1]"
         >
           <div className="relative w-[280px] h-[629px] mt-[193px]">
             <Image
