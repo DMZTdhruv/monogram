@@ -45,7 +45,7 @@ const JavascriptSection = () => {
         <Image
           height={466}
           width={246}
-          loading="lazy"
+          priority={true}
           alt="squiggly_arrowJS"
           src="/assets/squiggly_arrowJS.svg"
           className="absolute lg:block hidden right-[5%] top-[30%]"
@@ -56,7 +56,7 @@ const JavascriptSection = () => {
         <div className=" lg:h-[893px] mx-auto md:h-[550px] h-[400px] relative max-w-[1397px] xl:w-[90vw] lg:w-[80vw] md:w-full  ">
           <Image
             fill
-            loading="lazy"
+            priority={true}
             unoptimized
             alt="hello world"
             className=" sm:object-contain object-cover"
@@ -66,7 +66,7 @@ const JavascriptSection = () => {
       </div>
       <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%] ">
         <div className="w-[803px] h-[808px] relative ">
-          <Image fill unoptimized alt="retro  computer" loading="lazy" src="/assets/retro_computer.webp" />
+          <Image fill unoptimized alt="retro  computer" priority={true} src="/assets/retro_computer.webp" />
           <div className="screen top-[52px] left-[81px]  absolute z-10 px-[47px] pt-[47px] overflow-hidden text-[#44DBFF] w-[642px] h-[430px] bg-[#1A1A1A] text-[8px] leading-[15px] rounded-[30px]">
             <div className="relative">
               <pre className="absolute z-[10] top-0 left-0">{codeString}</pre>

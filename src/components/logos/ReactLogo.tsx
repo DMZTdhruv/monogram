@@ -5,7 +5,7 @@ const ReactLogo = () => {
     <div draggable={false} className="w-full select-none h-[341px] relative">
       <Image
         src={"/assets/ReactLogo.webp"}
-        loading="lazy"
+        priority={true}
         className="object-contain"
         fill
         alt="React logo"

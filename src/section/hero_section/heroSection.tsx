@@ -20,7 +20,7 @@ const HeroSection = () => {
 
         {/* mouse image */}
         <div draggable={false} className="hidden xl:block relative w-[84px] h-[580px] left-[256px] mt-[78px]">
-          <Image loading="lazy" draggable={false} alt="mouse" fill unoptimized src="/assets/mouse_line.webp" />
+          <Image priority={true} draggable={false} alt="mouse" fill unoptimized src="/assets/mouse_line.webp" />
         </div>
 
         <div
@@ -29,10 +29,10 @@ const HeroSection = () => {
         >
           <div className="relative w-[280px] h-[629px] mt-[193px]">
             <Image
-              loading="lazy"
               alt="hero_rectangle_1"
               fill
               unoptimized
+              priority={true}
               className="lg:opacity-100 opacity-40"
               src="/assets/hero_rectangle_1.webp"
             />
@@ -41,9 +41,9 @@ const HeroSection = () => {
           <div className="relative w-[280px] h-[629px]">
             <Image
               fill
-              loading="lazy"
               alt="hero_rectangle_2"
               unoptimized
+              priority={true}
               className="lg:opacity-100 opacity-40"
               src="/assets/hero_rectangle_2.webp"
             />

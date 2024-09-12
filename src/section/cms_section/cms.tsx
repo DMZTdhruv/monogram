@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CmsGlobe = dynamic(() => import("@/components/cms/scene"), {
   ssr: false,
-  loading: () => <Image fill loading="lazy" src="/assets/circle.webp" alt="3d circle" />,
+  loading: () => <Image fill priority={true} src="/assets/circle.webp" alt="3d circle" />,
 });
 
 const Cms = () => {
@@ -21,7 +21,7 @@ const Cms = () => {
         </div>
         <div className="relative mx-auto max-h-[914px] xl:h-auto max-w-[914px] xl:w-[100vw] aspect-square  lg:h-[714px]  lg:w-[714px] md:w-[500px] md:h-[500px] w-[300px] h-[300px]">
           <Image
-            loading="lazy"
+            priority={true}
             fill
             draggable={false}
             src="/assets/glow.webp"
@@ -29,7 +29,7 @@ const Cms = () => {
             alt="3d circle"
           />
           <Image
-            loading="lazy"
+            priority={true}
             fill
             draggable={false}
             src="/assets/glow_2.webp"

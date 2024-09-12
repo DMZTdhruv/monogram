@@ -5,7 +5,7 @@ const NextJsLogo = () => {
     <div className="w-full relative h-[360px]">
       <Image
         src={"/assets/NextJsLogo.webp"}
-        loading="lazy"
+        priority={true}
         className="object-contain"
         fill
         alt="NextJs logo"
