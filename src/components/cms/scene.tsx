@@ -6,9 +6,9 @@ import { Canvas } from "@react-three/fiber";
 
 const CmsScene = () => {
   return (
-    <Canvas className="z-[2]">
+    <Canvas className="z-[10]">
       <Model />
-      <OrbitControls enableZoom={false} autoRotate />
+      <OrbitControls enablePan={false} enableZoom={false} autoRotate />
       <Environment preset="studio" />
     </Canvas>
   );

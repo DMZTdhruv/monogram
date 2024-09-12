@@ -23,6 +23,7 @@ const Cms = () => {
           <Image
             loading="lazy"
             fill
+            draggable={false}
             src="/assets/glow.webp"
             className="md:scale-125 scale-110 z-[-1] -translate-y-2 -translate-x-2"
             alt="3d circle"
@@ -30,6 +31,7 @@ const Cms = () => {
           <Image
             loading="lazy"
             fill
+            draggable={false}
             src="/assets/glow_2.webp"
             className="md:scale-150 scale-125 z-[-1] -translate-y-2 -translate-x-2"
             alt="3d circle"
