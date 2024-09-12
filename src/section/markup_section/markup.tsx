@@ -18,14 +18,14 @@ const MarkUpSection = () => {
 
         {/* Mouse image */}
         <div className="absolute hidden xl:block w-[620.58px] h-[580px] left-[-80px] mt-[180px]">
-          <Image alt="mouse" priority={true} fill src="/assets/toppled_blocks.svg" />
+          <Image alt="mouse" loading="lazy" fill src="/assets/toppled_blocks.svg" />
         </div>
 
         {/* Gradient cards image with blur cards div */}
         <div className="absolute flex gap-[46px] z-[-1] top-[0%] md:top-[200px] lg:top-[400px] left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-[50px] lg:-translate-x-0 scale-[0.4] md:scale-75 lg:scale-100">
           <div className="relative w-[280px] h-[629px] mt-[193px]">
             <Image
-              priority={true}
+              loading="lazy"
               alt="hero_rectangle_1"
               fill
               className="opacity-20 lg:opacity-100"
@@ -35,7 +35,7 @@ const MarkUpSection = () => {
           </div>
           <div className="relative w-[280px] h-[629px]">
             <Image
-              priority={true}
+              loading="lazy"
               alt="hero_rectangle_2"
               fill
               className="opacity-20 lg:opacity-100"
@@ -48,7 +48,7 @@ const MarkUpSection = () => {
       {/* Wall of blocks */}
       <div className="w-full bottom-0 absolute left-[50%] -translate-x-1/2 max-w-[1920px] ">
         <div className="relative w-full h-[70px] md:h-[252px]">
-          <Image priority={true} src="/assets/wall_of_blocks.svg" className=" object-top" alt="Wall of blocks" fill />
+          <Image loading="lazy" src="/assets/wall_of_blocks.svg" className=" object-top" alt="Wall of blocks" fill />
         </div>
       </div>
     </section>

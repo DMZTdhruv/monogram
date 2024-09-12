@@ -5,7 +5,7 @@ const SvelteLogo = () => {
     <div className="w-full h-[100px] relative">
       <Image
         src={"/assets/SvelteLogo.webp"}
-        priority={true}
+        loading="lazy"
         className="object-contain"
         fill
         alt="Svelte logo"
