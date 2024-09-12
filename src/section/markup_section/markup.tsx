@@ -3,7 +3,7 @@ import Image from "next/image";
 const MarkUpSection = () => {
   return (
     <section className="relative w-full  overflow-hidden">
-      <div className="relative max-w-7xl h-[2000px] xl:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
+      <div className="relative max-w-7xl xl:h-[2000px] md:h-[1500px] sm:h-[1200px] xl:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
         {/* markup section intro */}
         <div className="text-center xl:mt-[600px] xl:text-left lg:pt-[153px] ">
           <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
@@ -30,7 +30,7 @@ const MarkUpSection = () => {
               fill
               unoptimized
               priority={true}
-              className="lg:opacity-100 opacity-20"
+              className="xl:opacity-100 opacity-20"
               src="/assets/markup_rect_1.webp"
             />
             <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
@@ -41,7 +41,7 @@ const MarkUpSection = () => {
               alt="markup_rect_2"
               unoptimized
               priority={true}
-              className="lg:opacity-100 opacity-20"
+              className="xl:opacity-100 opacity-20"
               src="/assets/markup_rect_2.webp"
             />
             <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
