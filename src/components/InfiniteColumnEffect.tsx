@@ -53,8 +53,8 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
         {children}
       </div>
       {/* Fading effect using gradient */}
-      <div className="bg-gradient-to-b from-transparent via-[#151515] to-[#151515] absolute h-[300px] bottom-[300px] md:bottom-[400px] md:h-[400px] lg:bottom-[600px]  lg:h-[600px] w-full z-10 pointer-events-none" />
-      <div className="absolute bottom-[0] bg-[#151515]  h-[300px] md:h-[400px] lg:h-[600px] w-full z-10 pointer-events-none" />
+      <div className="bg-gradient-to-b from-transparent via-[#151515] to-[#151515] absolute h-[300px] bottom-[300px] lg:bottom-[400px] md:h-[400px] xl:bottom-[600px]  lg:h-[400px] xl:h-[600px] w-full z-10 pointer-events-none" />
+      <div className="absolute bottom-[0] bg-[#151515]  h-[300px] md:h-[400px] lg:h-[400px] xl:h-[600px] w-full z-10 pointer-events-none" />
     </div>
   );
 };

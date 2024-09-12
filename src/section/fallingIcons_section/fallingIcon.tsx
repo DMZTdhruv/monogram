@@ -8,7 +8,7 @@ import Cms from "../cms_section/cms";
 const FallingIcons = () => {
   const defaultClassnames = "flex-1 h-full overflow-hidden border-dashed border-[#E8E8E8]/20";
   return (
-    <div className="lg:h-[2800px] h-[1000px] md:h-[1500px] mx-auto mt-[-200px] relative bg-[#151515]">
+    <div className="xl:h-[2500px] h-[1000px] md:h-[1500px] mx-auto relative bg-[#151515]">
       <div className="absolute inset-0 overflow-hidden">
         <div
           draggable={false}

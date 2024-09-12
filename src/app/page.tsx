@@ -8,8 +8,10 @@ export default function Home() {
     <main id="main" className="w-full ">
       <HeroSection />
       <JavascriptSection />
-      <FallingIcons />
-      <MarkUpSection />
+      <div className="mt-[-200px] ">
+        <FallingIcons />
+        <MarkUpSection />
+      </div>
     </main>
   );
 }

@@ -9,8 +9,9 @@
 
 /*
 for debugging css xD 
-*{
-  outline: 1px solid red ;
+*/
+/* *{
+  outline: 1px solid red;
 } */
 
 @media (prefers-color-scheme: dark) {
@@ -29,11 +30,26 @@ for debugging css xD
     text-wrap: balance;
   }
 }
-
-@media (max-width: 1280px) {
-  .responsive_height {
-    min-height: 100svh;
+@media (max-width: 1280px) and (orientation: portrait) {
+  .responsive_height--hero{
+    min-height: 100svh; /* Use 100svh for portrait */
   }
 }
 
+@media (max-width: 1280px) and (orientation: landscape) {
+  .responsive_height--hero{
+    min-height: 1000px; /* Use 800px for landscape */
+  }
+}
 
+@media (max-width: 1280px) and (orientation: portrait) {
+  .responsive_height--markup {
+    min-height: 100svh; /* Use 100svh for portrait */
+  }
+}
+
+@media (max-width: 1280px) and (orientation: landscape) {
+  .responsive_height--markup {
+    height: 300px; /* Use 800px for landscape */
+  }
+}
