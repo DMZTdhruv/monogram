@@ -1,6 +1,7 @@
 import HeroSection from "@/section/hero_section/heroSection";
 import JavascriptSection from "@/section/javascript_section/javascriptSection";
 import FallingIcons from "@/section/fallingIcons_section/fallingIcon";
+import MarkUpSection from "@/section/markup_section/markup";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <JavascriptSection />
       <FallingIcons />
-      <div className="h-[100vh] w-full bg-white" />
+      <MarkUpSection />
     </main>
   );
 }

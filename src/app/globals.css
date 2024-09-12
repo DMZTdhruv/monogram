@@ -7,6 +7,12 @@
   --foreground: #171717;
 }
 
+/*
+for debugging css xD 
+*{
+  outline: 1px solid red ;
+} */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
