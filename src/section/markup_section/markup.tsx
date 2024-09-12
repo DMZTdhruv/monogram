@@ -10,7 +10,7 @@ export default function MarkUpSection() {
           <p className="w-full xl:w-[509px] font-semibold mt-[10px] px-[16px] sm:px-[100px] lg:px-0 pt-[20px] md:ml-[10px] text-black md:text-[18px] leading-relaxed lg:leading-[35px]">
             When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website.
             The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN
-            like Vercel's Edge Network
+            like Vercel&apos;s Edge Network
           </p>
         </div>
 
