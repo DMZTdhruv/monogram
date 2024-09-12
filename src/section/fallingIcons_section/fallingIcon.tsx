@@ -1,8 +1,13 @@
-import InfiniteColumnEffect from "@/components/InfiniteColumnEffect";
+import dynamic from "next/dynamic";
 import NextJsLogo from "@/components/logos/NextJsLogo";
 import ReactLogo from "@/components/logos/ReactLogo";
 import VueLogo from "@/components/logos/VueLogo";
-import Cms from "../cms_section/cms";
+const InfiniteColumnEffect = dynamic(()=>import("@/components/InfiniteColumnEffect"), {
+  ssr: false,
+});
+const Cms = dynamic(() => import("../cms_section/cms"),{
+  ssr: false
+});
 
 const FallingIcons = () => {
   const defaultClassnames = "flex-1 h-full overflow-hidden border-dashed border-[#E8E8E8]/20";
