@@ -32,7 +32,8 @@ for debugging css xD
 }
 @media (max-width: 1280px) and (orientation: portrait) {
   .responsive_height--hero{
-    min-height: 100svh; /* Use 100svh for portrait */
+    height: 100svh;
+    min-height: 800px;  /* Use 100svh for portrait */
   }
 }
 
@@ -44,7 +45,8 @@ for debugging css xD
 
 @media (max-width: 1280px) and (orientation: portrait) {
   .responsive_height--markup {
-    min-height: 100svh; /* Use 100svh for portrait */
+    height: 100svh;
+    min-height: 800px; /* Use 100svh for portrait */
   }
 }
 
