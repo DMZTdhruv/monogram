@@ -1,7 +1,8 @@
+import dynamic from "next/dynamic";
 import HeroSection from "@/section/hero_section/heroSection";
-import JavascriptSection from "@/section/javascript_section/javascriptSection";
-import FallingIcons from "@/section/fallingIcons_section/fallingIcon";
-import MarkUpSection from "@/section/markup_section/markup";
+const JavascriptSection = dynamic(() => import("@/section/javascript_section/javascriptSection"));
+const FallingIcons = dynamic(() => import("@/section/fallingIcons_section/fallingIcon"));
+const MarkUpSection = dynamic(() => import("@/section/markup_section/markup"));
 
 export default function Home() {
   return (

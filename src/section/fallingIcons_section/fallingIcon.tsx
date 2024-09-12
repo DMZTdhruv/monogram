@@ -1,4 +1,3 @@
-"use client";
 import InfiniteColumnEffect from "@/components/InfiniteColumnEffect";
 import NextJsLogo from "@/components/logos/NextJsLogo";
 import ReactLogo from "@/components/logos/ReactLogo";
