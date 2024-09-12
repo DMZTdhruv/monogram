@@ -40,24 +40,23 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
   }, [speed]);
 
   return (
-    <div className={`${className} relative  w-full`}>
+    <div draggable={false} className={`${className} relative w-full overflow-hidden`}>
       <div ref={firstRow} className="w-full md:pt-[200px] pb-[0px] flex flex-col md:gap-[200px] gap-[0px] items-center">
+        {children}
         {children}
       </div>
       <div
         ref={secondRow}
-        className="w-full md:pt-[200px] pb-[0px] absolute flex flex-col md:gap-[200px] gap-[0px]  items-center"
+        className="w-full md:pt-[200px] pb-[0px] absolute flex flex-col md:gap-[200px] gap-[0px] items-center"
       >
         {children}
+        {children}
       </div>
+      {/* Fading effect using gradient */}
+      <div className="bg-gradient-to-b from-transparent via-[#151515] to-[#151515] absolute h-[300px] bottom-[300px] md:bottom-[400px] md:h-[400px] lg:bottom-[600px]  lg:h-[600px] w-full z-10 pointer-events-none" />
+      <div className="absolute bottom-[0] bg-[#151515]  h-[300px] md:h-[400px] lg:h-[600px] w-full z-10 pointer-events-none" />
     </div>
   );
 };
 
 export default InfiniteColumnEffect;
-
-// TODO
-// [] -> Add dynamic height to the logos
-// [] -> change the logos to png if more performant
-// [] -> slow down the speed
-// [] -> try the ticker method

@@ -32,7 +32,7 @@ const JavascriptSection = () => {
 
   return (
     <section id="javascript_Section" className="relative z-[1] lg:h-[893px] md:h-[70vh] h-[50vh] mt-[41.58px] w-full">
-      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[92px] pt-[18px] text-center">
+      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[92px] pt-[42px] text-center">
         <h2 className="font-black md:text-[100px] text-[50px] lg:text-[133px]">javascript</h2>
         <p className="md:leading-[35px] px-6 font-[300] leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
