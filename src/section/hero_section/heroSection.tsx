@@ -4,7 +4,7 @@ import "./heroSection.css";
 const HeroSection = () => {
   return (
     <section className="relative w-full  overflow-hidden">
-      <div className="relative max-w-7xl lg:block flex flex-col items-center justify-center   mx-auto responsive_height--hero xl:p-0 lg:px-[50px]">
+      <div className="relative max-w-7xl lg:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
         {/* Hero section intro */}
         <div className="text-center xl:text-left lg:pt-[153px] ">
           <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
