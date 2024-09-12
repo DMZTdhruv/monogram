@@ -9,7 +9,7 @@ const MarkUpSection = () => {
           <h1 className="text-[70px] md:text-[100px] lg:text-[133px] font-black leading-[100%]">
             markup <br className="lg:hidden block" />
           </h1>
-          <p className="mt-[10px] w-full lg:w-[509px] px-4 sm:px-[100px] lg:px-0 mx-auto lg:ml-[5px] lg:mx-0 text-body-text-secondary md:text-[18px] leading-[28px] lg:leading-[35px]">
+          <p className="mt-[10px] w-full lg:w-[509px] px-4 sm:px-[100px] lg:px-0 mx-auto lg:ml-[5px] lg:mx-0 text-black md:text-[18px] leading-[28px] lg:leading-[35px]">
             When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website.
             The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN
             like Vercel’s Edge Network.
@@ -28,7 +28,7 @@ const MarkUpSection = () => {
               loading="lazy"
               alt="hero_rectangle_1"
               fill
-              className="opacity-40 lg:opacity-100"
+              className="opacity-20 lg:opacity-100"
               src="/assets/markup_rect_1.webp"
             />
             <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-blur-3xl backdrop-filter" />
@@ -38,18 +38,17 @@ const MarkUpSection = () => {
               loading="lazy"
               alt="hero_rectangle_2"
               fill
-              className="opacity-40 lg:opacity-100"
+              className="opacity-20 lg:opacity-100"
               src="/assets/markup_rect_2.webp"
             />
             <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-blur-3xl backdrop-filter" />
           </div>
         </div>
       </div>
-
       {/* Wall of blocks */}
-      <div className="absolute bottom-0 w-full">
+      <div className="w-full bottom-0 absolute left-[50%] -translate-x-1/2 max-w-[1920px] ">
         <div className="relative w-full h-[70px] md:h-[252px]">
-          <Image loading="lazy" src="/assets/wall_of_blocks.svg" className="object-cover" alt="Wall of blocks" fill />
+          <Image loading="lazy" src="/assets/wall_of_blocks.svg" className=" object-top" alt="Wall of blocks" fill />
         </div>
       </div>
     </section>

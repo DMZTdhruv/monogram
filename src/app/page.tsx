@@ -5,6 +5,7 @@ const FallingIcons = dynamic(() => import("@/section/fallingIcons_section/fallin
   ssr: false,
 });
 const MarkUpSection = dynamic(() => import("@/section/markup_section/markup"));
+const ScoreSection = dynamic(() => import("@/section/scores_section/scoreSection"));
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <FallingIcons />
         <MarkUpSection />
       </div>
+      <ScoreSection />
     </main>
   );
 }
