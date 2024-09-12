@@ -3,9 +3,9 @@ import Image from "next/image";
 const MarkUpSection = () => {
   return (
     <section className="relative w-full  overflow-hidden">
-      <div className="relative max-w-7xl h-[2000px] xl:block border-red-500 border flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
+      <div className="relative max-w-7xl h-[2000px] xl:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
         {/* markup section intro */}
-        <div className="text-center xl:mt-[600px] border-red-500 border xl:text-left lg:pt-[153px] ">
+        <div className="text-center xl:mt-[600px] xl:text-left lg:pt-[153px] ">
           <h1 className="font-black leading-[100%] md:text-[100px] text-[70px] lg:text-[133px]">
           markup <br className="block lg:hidden" />
           </h1>
