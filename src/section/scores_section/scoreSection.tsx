@@ -12,7 +12,7 @@ export default function Component() {
   ];
 
   return (
-    <section className="relative bg-[#151515] h-[1100px] md:h-[1500px] lg:h-[2000px]">
+    <section className="relative bg-[#151515] h-[1100px] sm:h-[1300px] md:h-[1500px] lg:h-[2000px]">
       {/* card */}
       <div className="w-[90vw] sm:w-[80vw] md:w-[90vw] lg:w-[1024px] xl:w-[1204px] mx-auto z-10 gradient-border flex flex-col items-center text-white translate-y-[-100px] backdrop-blur-2xl border border-[#E8E8E8]/20 rounded-2xl overflow-hidden">
         <h2 className="text-4xl pb-8 sm:pb-12 md:pb-16 lg:pb-[95px] sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[76px] text-center mt-8 sm:mt-12 md:mt-16 lg:mt-[120px] font-black leading-[100%]">
