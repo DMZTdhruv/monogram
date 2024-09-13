@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { fragmentShader, vertexShader } from "./shaders";
@@ -23,40 +22,28 @@ type GLTFResult = GLTF & {
   };
 };
 
-interface ICmsGlobeUniform {
-  time: number;
-  colorA: THREE.Color;
-  colorB: THREE.Color;
-  colorC: THREE.Color;
-}
-
 export const Model = () => {
+  // Load the GLTF model and extract nodes and materials
   const { nodes, materials } = useGLTF("/medias/cmsUltra.glb") as GLTFResult;
-  const materialRef = useRef<ICmsGlobeUniform | null>(null);
 
-  const uniforms = useRef<
-    | {
-        [uniform: string]: THREE.IUniform<number | THREE.Color>;
-      }
-    | undefined
-  >({
+  // Ref for storing shader uniforms
+  const uniforms = useRef<{
+    [uniform: string]: THREE.IUniform<number | THREE.Color>;
+  }>({
     time: { value: 0 },
     colorA: { value: new THREE.Color("#00ffff") },
     colorB: { value: new THREE.Color("#ff00ff") },
     colorC: { value: new THREE.Color("#ffafaf") },
   });
 
-  useFrame((state) => {
-    if (materialRef.current) {
-      materialRef.current.time = state.clock.getElapsedTime();
-    }
-  });
-
   return (
     <group scale={[3, 3, 3]} dispose={null}>
+      {/* Main sphere with custom shader material */}
       <mesh castShadow receiveShadow geometry={nodes.Sphere.geometry}>
         <shaderMaterial uniforms={uniforms.current} vertexShader={vertexShader} fragmentShader={fragmentShader} />
       </mesh>
+
+      {/* Various curves with predefined materials and positions */}
       <mesh
         castShadow
         receiveShadow
@@ -95,4 +82,5 @@ export const Model = () => {
   );
 };
 
+// Preload the GLTF model for faster loading
 useGLTF.preload("/medias/cmsUltra.glb");

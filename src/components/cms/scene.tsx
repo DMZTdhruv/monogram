@@ -9,7 +9,7 @@ const CmsScene = () => {
     <Canvas className="z-[10]">
       <Model />
       <OrbitControls enablePan={false} enableZoom={false} autoRotate />
-      <Environment preset="studio" />
+      <Environment preset="warehouse" />
     </Canvas>
   );
 };

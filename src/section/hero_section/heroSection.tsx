@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./heroSection.css";
+import GraphicIllustration from "@/components/GraphicIllustration";
 
 const HeroSection = () => {
   return (
@@ -31,31 +32,14 @@ const HeroSection = () => {
           />
         </div>
 
+        {/* Graphic illustration of the hero section */}
         <div className="cards absolute flex gap-[46px] lg:top-[0%] top-[50%] lg:translate-y-0 -translate-y-1/2 left-[50%] -translate-x-1/2 xl:left-auto xl:-translate-x-0 xl:right-[50px] xl:top-[153px] scale-[0.4] md:scale-75 xl:scale-100 z-[-1]">
-          <div className="relative w-[280px] h-[629px] mt-[193px]">
-            <Image
-              alt="hero rectangle 1"
-              src="/assets/hero_rectangle_1.webp"
-              fill
-              sizes="(max-width: 768px) 111px, (max-width: 1280px) 208px, 280px"
-              quality={90}
-              className="lg:opacity-100 opacity-40 object-cover"
-              priority
-            />
-            <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
-          </div>
-          <div className="relative w-[278px] h-[670px]">
-            <Image
-              alt="hero rectangle 2"
-              src="/assets/hero_rectangle_2.webp"
-              fill
-              sizes="(max-width: 768px) 111px, (max-width: 1280px) 208px, 278px"
-              quality={90}
-              className="lg:opacity-100 opacity-40 object-cover"
-              priority
-            />
-            <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
-          </div>
+          <GraphicIllustration
+            alt1="hero rectangle illustration 1"
+            src1="/assets/hero_rectangle_1.webp"
+            alt2="hero rectangle illustration 2"
+            src2="/assets/hero_rectangle_2.webp"
+          />
         </div>
       </div>
     </section>

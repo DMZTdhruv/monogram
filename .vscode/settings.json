@@ -3,6 +3,7 @@
    "notebook.defaultFormatter": "biomejs.biome",
    "editor.formatOnSave": true,
    "cSpell.words": [
+      "gsap",
       "Jamstack"
    ]
 }
