@@ -11,7 +11,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Jamstack 101",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, tincidunt proin nunc viverra tristique tempor, ipsum. At lectus vel pretium tempor ut dui vivamus sit. ",
+    "A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher search-engine ranking and a more positive, responsive end-user experience.",
+
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({
