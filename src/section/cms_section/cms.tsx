@@ -26,7 +26,7 @@ const Cms = () => {
         </div>
 
         {/* 3D globe container with glow effects */}
-        <div className="relative mx-auto max-h-[914px] xl:h-auto max-w-[914px] xl:w-[100vw] aspect-square lg:h-[714px] lg:w-[714px] md:w-[500px] md:h-[500px] w-[300px] h-[300px]">
+        <div className="relative mx-auto max-h-[914px] xl:h-auto max-w-[914px] xl:w-[100vw] aspect-square lg:h-[714px] lg:w-[714px] md:w-[500px] md:h-[500px] w-[250px] h-[250px]">
           {/* Glow and glow gradient for visual enhancement */}
           <Image
             loading="lazy"
