@@ -9,7 +9,7 @@ const JavascriptSection = () => {
       className="relative z-[1]  lg:h-[893px] md:h-[550px] h-[400px] mt-[41.58px] w-full"
     >
       {/* Intro of the section */}
-      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[80px] lg:pt-[200px] pt-[42px] text-center">
+      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[80px] lg:pt-[200px] xl:pt-[100px] pt-[42px] text-center">
         <h2 className="font-black md:text-[80px] text-[50px] xl:text-[133px]">javascript</h2>
         <p className="md:leading-[35px] px-6 font-[300] leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
