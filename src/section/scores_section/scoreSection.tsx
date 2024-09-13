@@ -55,10 +55,10 @@ export default function Component() {
 
       {/* border */}
       <div className="flex select-none absolute left-[50%] -translate-x-1/2 top-0 w-full z-[0] h-full max-w-[1500px] mx-auto lg:px-[116px] md:px-[60px] px-[16px]">
-        <div className={`${defaultBorderClassname} border-x-2`} />
-        <div className={`${defaultBorderClassname} border-r-2`} />
+        <div className={`${defaultBorderClassname} md:border-x-2 border-r-2`} />
+        <div className={`${defaultBorderClassname} md:border-r-2 hidden`} />
         <div className={`${defaultBorderClassname}`} />
-        <div className={`${defaultBorderClassname} border-x-2`} />
+        <div className={`${defaultBorderClassname} md:border-x-2 border-l-2`} />
       </div>
 
       <div className="flex mt-12 relative z-[1] transition-all sm:mt-16 md:mt-20 lg:mt-[150px] flex-col items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[30px] text-white">
