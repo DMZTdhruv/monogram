@@ -1,7 +1,6 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
-import type React from "react";
 import { useCallback, useRef } from "react";
 import gsap from "gsap";
 

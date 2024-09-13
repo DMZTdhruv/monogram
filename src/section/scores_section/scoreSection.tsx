@@ -19,7 +19,7 @@ export default function Component() {
           top audit scores
         </h2>
         <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-[67px] my-8 sm:my-10 md:my-12 lg:my-16">
-          {animatedScores.map(item => (
+          {animatedScores.map((item) => (
             <div
               key={item.blinkDelay}
               className="w-[80px] sm:w-[140px] md:w-[180px] lg:w-[212px] relative aspect-square"
@@ -34,8 +34,8 @@ export default function Component() {
                   alt="ellipse"
                   src="/assets/ellipse.svg"
                   fill
+                  sizes="(max-width: 640px) 80px, (max-width: 768px) 140px, (max-width: 1024px) 180px, 212px"
                   className={`object-contain scale-150 blink-animation blink-delay-${item.blinkDelay} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
-                  unoptimized
                 />
               </div>
             </div>

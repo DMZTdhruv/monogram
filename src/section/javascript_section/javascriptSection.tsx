@@ -53,16 +53,13 @@ const JavascriptSection = () => {
       </div>
 
       <div className="absolute top-0 z-[-1] w-full ">
-        <div className=" lg:h-[893px] mx-auto md:h-[550px] h-[400px] relative max-w-[1397px] xl:w-[90vw] lg:w-[80vw] md:w-full  ">
-          <Image
-            fill
-            loading="lazy"
-            unoptimized
-            alt="hello world"
-            className=" sm:object-contain object-cover"
-            src={"/assets/orange_square.webp"}
-          />
-        </div>
+        <Image
+          fill
+          alt="Orange square illustration"
+          className="sm:object-contain object-cover"
+          src="/assets/orange_square.webp"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 90vw"
+        />
       </div>
       <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%] ">
         <div className="w-[803px] h-[808px] relative ">

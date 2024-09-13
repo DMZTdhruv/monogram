@@ -3,14 +3,7 @@ import Image from "next/image";
 const NextJsLogo = () => {
   return (
     <div className="w-full relative h-[360px]">
-      <Image
-        src={"/assets/NextJsLogo.webp"}
-        loading="lazy"
-        className="object-contain"
-        fill
-        alt="NextJs logo"
-        unoptimized
-      />
+      <Image src={"/assets/NextJsLogo.webp"} className="object-contain" fill alt="NextJs logo" priority />
     </div>
   );
 };
