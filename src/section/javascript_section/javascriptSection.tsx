@@ -9,8 +9,8 @@ const JavascriptSection = () => {
       className="relative z-[1]  lg:h-[893px] md:h-[550px] h-[400px] mt-[41.58px] w-full"
     >
       {/* Intro of the section */}
-      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[92px] pt-[42px] text-center">
-        <h2 className="font-black md:text-[100px] text-[50px] lg:text-[133px]">javascript</h2>
+      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[80px] lg:pt-[200px] pt-[42px] text-center">
+        <h2 className="font-black md:text-[80px] text-[50px] xl:text-[133px]">javascript</h2>
         <p className="md:leading-[35px] px-6 font-[300] leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
           <br className="hidden sm:block " />
@@ -21,14 +21,14 @@ const JavascriptSection = () => {
           width={246}
           alt="squiggly_arrowJS"
           src="/assets/squiggly_arrowJS.svg"
-          className="absolute lg:block hidden right-[5%] top-[30%]"
+          className="absolute xl:block hidden right-[5%] top-[30%]"
           sizes="(max-width: 768px) 150px, (max-width: 1280px) 200px, 246px"
         />
       </div>
 
       {/* The javascript section or the orange card illustration */}
       <div className="absolute top-0 z-[-1] w-full ">
-        <div className=" lg:h-[893px] mx-auto md:h-[550px] h-[400px] relative max-w-[1397px] xl:w-[90vw] lg:w-[80vw] md:w-full  ">
+        <div className=" lg:h-[893px] mx-auto md:h-[550px] h-[400px] relative max-w-[1397px] lg:w-[90vw] md:w-full  ">
           <Image
             fill
             alt="hello world"
@@ -41,7 +41,7 @@ const JavascriptSection = () => {
       </div>
 
       {/* Retro computer illustration with code snippet */}
-      <div className="absolute left-1/2 lg:scale-100 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%]">
+      <div className="absolute left-1/2 xl:scale-100 lg:scale-75 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%]">
         <div className="w-[803px] h-[808px] relative">
           <Image fill unoptimized alt="retro computer" loading="lazy" src="/assets/retro_computer.webp" />
           {/* fake screen */}

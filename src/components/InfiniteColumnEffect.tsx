@@ -64,8 +64,8 @@ const InfiniteColumnEffect = ({ children, speed = 0.1, className }: IInfiniteCol
         {children}
       </div>
       {/* Fading effect using gradient so that our icons disappears, just a trick to do it, as we don't want to use opacity for icon row which can lead to performance issues */}
-      <div className="bg-gradient-to-b from-transparent via-[#151515] to-[#151515] absolute h-[300px] bottom-[300px] lg:bottom-[400px] md:h-[400px] xl:bottom-[600px]  lg:h-[400px] xl:h-[600px] w-full z-10 pointer-events-none" />
-      <div className="absolute bottom-[0] bg-[#151515]  h-[300px] md:h-[400px] lg:h-[400px] xl:h-[600px] w-full z-10 pointer-events-none" />
+      <div className="bg-gradient-to-b from-transparent via-[#151515] to-[#151515] absolute h-[300px] bottom-[300px] lg:bottom-[500px] md:h-[400px] xl:bottom-[600px]  lg:h-[500px] xl:h-[600px] w-full z-10 pointer-events-none" />
+      <div className="absolute bottom-[0] bg-[#151515]  h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full z-10 pointer-events-none" />
     </div>
   );
 };

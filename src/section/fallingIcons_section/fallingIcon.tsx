@@ -17,7 +17,7 @@ const FallingIcons = () => {
   const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]/20";
 
   return (
-    <section id="Falling icon" className="xl:h-[2500px] h-[1000px] md:h-[1500px] mx-auto relative bg-[#151515]">
+    <section id="Falling icon" className="xl:h-[2500px] lg:h-[1800px] h-[1000px] md:h-[1500px] mx-auto relative bg-[#151515]">
       {/* Container for falling icons */}
       <div className="absolute inset-0 overflow-hidden">
         <div
@@ -56,7 +56,7 @@ const FallingIcons = () => {
         <Cms />
       </div>
       {/* Decorative white wave element to visually separate sections */}
-      <div className="absolute max-w-[2000px] left-1/2 -translate-x-1/2 w-full z-[0] bottom-[0]">
+      <div className="absolute max-w-[2000px]  left-1/2 -translate-x-1/2 w-full z-[0] bottom-[-2px]">
         <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg">
           <title>wave</title>
           <path

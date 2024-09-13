@@ -18,7 +18,7 @@ const GraphicIllustration = ({ alt1, src1, alt2, src2 }: IGraphicIllustration) =
           fill
           sizes="(max-width: 768px) 111px, (max-width: 1280px) 208px, 280px"
           quality={90}
-          className="lg:opacity-100 opacity-40 object-cover"
+          className="xl:opacity-100 opacity-40 object-cover"
           priority
         />
         <div className="absolute top-[314px] left-[164px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
@@ -30,7 +30,7 @@ const GraphicIllustration = ({ alt1, src1, alt2, src2 }: IGraphicIllustration) =
           fill
           sizes="(max-width: 768px) 111px, (max-width: 1280px) 208px, 278px"
           quality={90}
-          className="lg:opacity-100 opacity-40 object-cover"
+          className="xl:opacity-100 opacity-40 object-cover"
           priority
         />
         <div className="absolute top-[302px] left-[158px] w-full h-full z-10 rounded-[68px] bg-primary bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-3xl" />
