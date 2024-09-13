@@ -12,6 +12,7 @@ export default function Home() {
       <JavascriptSection />
       <div className="mt-[-200px] ">
         <FallingIcons />
+
         <MarkUpSection />
       </div>
       <ScoreSection />

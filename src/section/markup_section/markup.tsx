@@ -3,6 +3,7 @@ import Image from "next/image";
 const MarkUpSection = () => {
   return (
     <section className="relative w-full  overflow-hidden">
+
       <div className="relative max-w-7xl xl:h-[1500px] md:h-[1500px] sm:h-[1200px] xl:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
         {/* markup section intro */}
         <div className="text-center xl:mt-[200px] xl:text-left lg:pt-[153px] ">
