@@ -11,7 +11,7 @@ const MarkUpSection = () => {
             markup <br className="block lg:hidden" />
           </h2>
 
-          <p className="w-full xl:text-2xl text-sm xl:w-[480px] mt-[10px] px-[16px] sm:px-[100px] lg:px-0 pt-[20px]  text-body-text-secondary md:text-[18px] leading-relaxed lg:leading-relaxed">
+          <p className="w-full text-black xl:text-2xl text-sm  xl:w-[480px] mt-[10px] px-[16px] sm:px-[100px] lg:px-0 pt-[20px] md:text-[18px] leading-relaxed lg:leading-relaxed">
             When ready for deployment, a static-site generator such as Astro or Next.js is used to compile the website.
             The end result is a collection of pre-rendered HTML pages that can be delivered lightning-fast over a CDN
             like Vercel’s Edge Network.
