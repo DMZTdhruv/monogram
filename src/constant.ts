@@ -32,10 +32,6 @@ export const codeString = `
 
 `;
 
-
-// default classnames for the borders of falling icons and score section
-export const borderClassname = "flex-1 h-full relative border-dashed border-[#E8E8E8]/20";
-
 // animate score object
 // keys: score, blinkDelay, spinDuration, spinDirection
 // her blinkDelay ensures that each animatedScore element blinks with a delay
