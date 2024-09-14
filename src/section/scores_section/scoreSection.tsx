@@ -2,17 +2,17 @@ import Image from "next/image";
 import "./scoreSection.css";
 import { animatedScores } from "@/constant";
 
-export default function Component() {
-  const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]/20";
+export default function ScoreComponent() {
+  const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]";
 
   return (
-    <section className="relative bg-[#151515] h-[1300px] sm:h-[1300px] md:h-[1500px] lg:h-[2000px]">
+    <section className="relative z-1 bg-[#151515] h-auto sm:h-[1300px] md:h-[1500px] lg:h-[2000px]">
       {/* card */}
-      <div className="w-[90vw] sm:w-[80vw] md:w-[90vw] lg:w-[950px] xl:w-[1204px] mx-auto z-10 gradient-border flex flex-col items-center text-white translate-y-[-100px] backdrop-blur-2xl border border-[#E8E8E8]/20 rounded-2xl overflow-hidden">
-        <h2 className="text-4xl pb-8 sm:pb-12 md:pb-16 lg:pb-[95px] sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[76px] text-center mt-8 sm:mt-12 md:mt-16 lg:mt-[120px] font-black leading-[100%]">
+      <div className="w-[90vw] sm:w-[80vw] md:w-[90vw] lg:w-[950px] xl:w-[1230px] mx-auto z-10 gradient-border flex flex-col backdrop-blur-xl items-center text-[#EFFFE2] translate-y-[-100px]  overflow-hidden">
+        <h2 className="text-4xl mix-blend-color-dodge tracking-[-0.03em]  pb-8 sm:pb-12 md:pb-16 lg:pb-[45px] sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[76px] text-center mt-8 sm:mt-12 md:mt-16 lg:mt-[120px] font-black leading-[100%]">
           top audit scores
         </h2>
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 lg:gap-[67px] my-8 sm:my-10 md:my-12 lg:my-16">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-[73px] my-8 sm:my-10 md:my-12 lg:my-16">
           {animatedScores.map((item) => (
             <div
               key={item.blinkDelay}
@@ -29,23 +29,24 @@ export default function Component() {
                   src="/assets/ellipse.svg"
                   fill
                   sizes="(max-width: 640px) 80px, (max-width: 768px) 140px, (max-width: 1024px) 180px, 212px"
-                  className={`object-contain scale-150 blink-animation blink-delay-${item.blinkDelay} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
+                  className={`object-contain scale-[1.65] blink-animation blink-delay-${item.blinkDelay} opacity-${item.opacity} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
                 />
               </div>
             </div>
           ))}
         </div>
-        <div className="px-4 sm:px-6 md:px-8 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-[200px] pt-8 sm:pt-12 md:pt-16 lg:pt-[100px]">
-          <p className="max-w-[760px] text-[#C7C7C7] text-sm sm:text-base md:text-lg lg:text-[26px] opacity-50 flex flex-col gap-4 sm:gap-6 md:gap-8 leading-relaxed">
-            <span>
+
+        <div className="px-4 relative sm:px-6 md:px-8 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-[220px] pt-8 sm:pt-12 md:pt-16 lg:pt-[75px]">
+          <p className="max-w-[756px]  font-light tracking-[0.015em] text-[#C7C7C7] text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-4 sm:gap-6 md:gap-[43px] leading-[42.12px]">
+            <span className=" leading-relaxed block  mix-blend-color-dodge relative z-[100] ">
               Search engines, business stakeholders, and end-users gauge a website&apos;s value using metric tools like
               Google Lighthouse, which measures site performance, SEO, and accessibility.
             </span>
-            <span>
+            <span className=" leading-relaxed block  mix-blend-color-dodge relative z-[100] ">
               Performance is one of the most difficult scores to get to 100. This is especially true in a time when
               users demand JavaScript-heavy, highly-interactive web experiences.
             </span>
-            <span>
+            <span className=" leading-relaxed block  mix-blend-color-dodge relative z-[100] ">
               A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher
               search-engine ranking and a more positive, responsive end-user experience.
             </span>
@@ -54,14 +55,14 @@ export default function Component() {
       </div>
 
       {/* border */}
-      <div className="flex select-none absolute left-[50%] -translate-x-1/2 top-0 w-full z-[0] h-full max-w-[1500px] mx-auto lg:px-[116px] md:px-[60px] px-[16px]">
-        <div className={`${defaultBorderClassname} md:border-x-2 border-r-2`} />
-        <div className={`${defaultBorderClassname} md:border-r-2 hidden`} />
-        <div className={`${defaultBorderClassname}`} />
-        <div className={`${defaultBorderClassname} md:border-x-2 border-l-2`} />
+      <div className="flex select-none absolute left-[50%] opacity-20  -translate-x-1/2 top-0 w-full h-full max-w-[1900px] mx-auto lg:px-[100px] md:px-[20px] px-[16px]">
+        <div className={`${defaultBorderClassname}  md:border-x border-r border-1 `} />
+        <div className={`${defaultBorderClassname}  md:border-r  border-1 `} />
+        <div className={`${defaultBorderClassname}  `} />
+        <div className={`${defaultBorderClassname}  md:border-x border-1 border-l border-1`} />
       </div>
 
-      <div className="flex mt-12 relative z-[1] transition-all sm:mt-16 md:mt-20 lg:mt-[150px] flex-col items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[30px] text-white">
+      <div className="flex pb-[50px] sm:pb-[0px] mt-12 relative z-[1] transition-all sm:mt-16 md:mt-20 lg:mt-[150px] flex-col items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[30px] text-white">
         <p className="text-sm text-center sm:text-xl md:text-2xl">
           This is a design test by &#123;&#123;Dhruv&#125;&#125; for Monogram.
         </p>
