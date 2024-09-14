@@ -4,14 +4,6 @@
   border-radius: 32px;
 }
 
-.text-gradient {
-  background: url("/assets/score_text.png") 0 0 / cover no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-position: 40%;
-  background-clip: text;
-  opacity: 1;
-}
 
 .gradientCard {
   position: relative;

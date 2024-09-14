@@ -37,16 +37,16 @@ const ScoreSection = () => {
               ))}
             </div>
           </div>
-          <p className="max-w-[756px] font-[400] pt-6 sm:pt-8 md:pt-10 lg:pt-[70px] mx-auto px-4 sm:px-8 lg:px-0  pb-[60px] sm:pb-[100px] lg:pb-0 tracking-[0.015em] text-gradient text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 leading-[42.12px]">
-            <span className="leading-relaxed block text-gradient relative z-[100]">
+          <p className="text-gradient max-w-[756px] font-[400] pt-6 sm:pt-8 md:pt-10 lg:pt-[70px] mx-auto px-4 sm:px-8 lg:px-0  pb-[60px] sm:pb-[100px] lg:pb-0 tracking-[0.015em] text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 leading-[42.12px]">
+            <span className="leading-relaxed block  mix-blend-color-dodge text-[#C7C7C7] relative z-[100]">
               Search engines, business stakeholders, and end-users gauge a website&apos;s value using metric tools like
               Google Lighthouse, which measures site performance, SEO, and accessibility.
             </span>
-            <span className="leading-relaxed block text-gradient relative z-[100]">
+            <span className="leading-relaxed block  mix-blend-color-dodge text-[#C7C7C7] relative z-[100]">
               Performance is one of the most difficult scores to get to 100. This is especially true in a time when
               users demand JavaScript-heavy, highly-interactive web experiences.
             </span>
-            <span className="leading-relaxed block text-gradient relative z-[100]">
+            <span className="leading-relaxed block mix-blend-color-dodge text-[#C7C7C7]  relative z-[100]">
               A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher
               search-engine ranking and a more positive, responsive end-user experience.
             </span>
