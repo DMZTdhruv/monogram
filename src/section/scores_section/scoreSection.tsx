@@ -13,7 +13,7 @@ export default function ScoreComponent() {
           top audit scores
         </h2>
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-[73px] my-8 sm:my-10 md:my-12 lg:my-16">
-          {animatedScores.map((item) => (
+          {animatedScores.map((item, index) => (
             <div
               key={item.blinkDelay}
               className="w-[80px] sm:w-[140px] md:w-[180px] lg:w-[212px] relative aspect-square"
@@ -29,7 +29,7 @@ export default function ScoreComponent() {
                   src="/assets/ellipse.svg"
                   fill
                   sizes="(max-width: 640px) 80px, (max-width: 768px) 140px, (max-width: 1024px) 180px, 212px"
-                  className={`object-contain scale-[1.65] blink-animation blink-delay-${item.blinkDelay} opacity-${item.opacity} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
+                  className={`object-contain scale-[1.65] blink-animation blink-delay-${item.blinkDelay} ${index === 2 ? "opacity-30" : "opacity-100"} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
                 />
               </div>
             </div>

@@ -38,8 +38,8 @@ export const codeString = `
 // spin duration defines the speed of each animated score
 // and direction basically defines the direction
 export const animatedScores = [
-  { score: 100, blinkDelay: 0, spinDuration: 10, spinDirection: "clockwise", opacity: 100 },
-  { score: 100, blinkDelay: 1, spinDuration: 12, spinDirection: "counterclockwise", opacity: 100 },
-  { score: 100, blinkDelay: 2, spinDuration: 8, spinDirection: "clockwise", opacity: 30 },
-  { score: 100, blinkDelay: 3, spinDuration: 15, spinDirection: "counterclockwise", opacity: 100 },
+  { score: 100, blinkDelay: 0, spinDuration: 10, spinDirection: "clockwise" },
+  { score: 100, blinkDelay: 1, spinDuration: 12, spinDirection: "counterclockwise" },
+  { score: 100, blinkDelay: 2, spinDuration: 8, spinDirection: "clockwise" },
+  { score: 100, blinkDelay: 3, spinDuration: 15, spinDirection: "counterclockwise" },
 ];
