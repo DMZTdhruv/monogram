@@ -17,15 +17,18 @@ const FallingIcons = () => {
   const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]/20";
 
   return (
-    <section id="Falling icon" className="xl:h-[2500px] lg:h-[1800px] h-[1000px] md:h-[1500px] mx-auto relative bg-[#151515]">
+    <section
+      id="Falling icon"
+      className="xl:h-[2600px] lg:h-[1800px] h-[1000px] md:h-[1500px] mx-auto relative bg-[#151515]"
+    >
       {/* Container for falling icons */}
       <div className="absolute inset-0 overflow-hidden">
         <div
           draggable={false}
-          className="flex select-none relative z-[0] h-full top-0 max-w-[1500px] mx-auto lg:px-[116px] md:px-[60px] px-[16px]"
+          className="flex select-none relative z-[0] h-full top-0 max-w-[1500px] mx-auto lg:px-[100px] md:px-[60px] px-[16px]"
         >
           {/* First column (fastest speed) */}
-          <InfiniteColumnEffect className={`${defaultBorderClassname} md:block hidden border-x-2`} speed={0.175}>
+          <InfiniteColumnEffect className={`${defaultBorderClassname} md:block hidden border-x border-1`} speed={0.175}>
             <ReactLogo />
             <NextJsLogo />
             <VueLogo />
@@ -37,13 +40,13 @@ const FallingIcons = () => {
             <NextJsLogo />
           </InfiniteColumnEffect>
           {/* Third column (slowest speed) */}
-          <InfiniteColumnEffect className={`${defaultBorderClassname} border-l-2`} speed={0.05}>
+          <InfiniteColumnEffect className={`${defaultBorderClassname} border-l border-1`} speed={0.05}>
             <ReactLogo />
             <VueLogo />
             <NextJsLogo />
           </InfiniteColumnEffect>
           {/* Fourth column (fast but slower than the first column) */}
-          <InfiniteColumnEffect className={`${defaultBorderClassname} md:border-x-2 border-l-2`} speed={0.125}>
+          <InfiniteColumnEffect className={`${defaultBorderClassname} md:border-x border-1 border-l border-1`} speed={0.125}>
             <VueLogo />
             <NextJsLogo />
             <ReactLogo />

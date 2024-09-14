@@ -6,22 +6,24 @@ import Image from "next/image";
 // This ensures the 3D globe is only rendered on the client-side
 const CmsGlobe = dynamic(() => import("@/components/cms/scene"), {
   // Turn off server-side rendering for this component
-  ssr: false, 
+  ssr: false,
   // Loading fallback: displays a 2D circle while the 3D globe loads
   loading: () => <Image fill src="/assets/circle.webp" alt="3D circle placeholder" />,
 });
 
 const Cms = () => {
   return (
-    <div className="w-full text-white mx-auto">
+    <div className="w-full text-white">
       <div className="text-center flex flex-col md:gap-[100px] gap-[50px] mx-auto">
         {/* Section title and description */}
-        <div>
-          <h2 className="text-[80px] md:text-[120px] lg:text-[133px] font-bold">api</h2>
-          <p className="text-[13px] leading-relaxed md:text-[16px] lg:text-[18px] xl:text-[20px]">
-            At build time, a Jamstack site pulls data from one or more APIs to generate markup. These APIs can be a
-            headless CMS <br className="md:block hidden" /> like Prismic, a database like Supabase, or even a local JSON
-            file!
+        <div className="max-w-[730px] lg:pb-[70px] md:pb-[40px] pb-[20px] mx-auto space-y-[30px]">
+          <h2 className="text-[80px] md:text-[120px] lg:text-[133px] font-black tracking-[-0.05em]">api</h2>
+          <p className="text-[13px] leading-[20px] md:leading-[28px] lg:leading-[32px] xl:leading-[38.8px] xl:text-nowrap font-[300] md:text-[16px] lg:text-[18px] xl:text-[24px]">
+            At build time, a Jamstack website uses data from one or more
+            <br className="md:block hidden" />
+            &nbsp;APIs to generate markup. These APIs can be a headless CMS
+            <br className="md:block hidden" />
+            &nbsp;like Prismic, a database like Supabase, or even a local JSON file!
           </p>
         </div>
 
@@ -33,7 +35,7 @@ const Cms = () => {
             fill
             draggable={false}
             src="/assets/glow.webp"
-            className="md:scale-125 scale-110 z-[-1] -translate-y-2 -translate-x-2"
+            className="md:scale-125 scale-110 z-[-1] -translate-y-3 -translate-x-3"
             alt="Glow effect"
           />
           <Image

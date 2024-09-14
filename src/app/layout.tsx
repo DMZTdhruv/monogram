@@ -4,7 +4,7 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
+  weight: ["100", "200", "300", "400", "600", "700", "900"],
   display: "swap",
 });
 
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     "A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher search-engine ranking and a more positive, responsive end-user experience.",
 
   twitter: {
-    card: "summary_large_image"
-  }
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
