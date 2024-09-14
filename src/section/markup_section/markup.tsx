@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MarkUpSection = () => {
   return (
-    <section className="relative w-full  overflow-hidden">
+    <section className="relative w-full overflow-hidden ">
       <div className="relative max-w-7xl xl:h-[1500px] md:h-[1500px] sm:h-[1200px] xl:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
         {/* markup section intro */}
         <div className="text-center xl:mt-[200px] xl:text-left lg:pt-[153px] ">
@@ -41,8 +41,8 @@ const MarkUpSection = () => {
         </div>
       </div>
       <div className="w-full bottom-0 absolute left-[50%] -translate-x-1/2 max-w-[1920px] ">
-        <div className="relative w-full h-[70px] md:h-[252px]">
-          <Image loading="lazy" src="/assets/wall_of_blocks.svg" className=" object-top" alt="Wall of blocks" fill />
+        <div className="relative w-full  h-[50px] lg:h-[150px] md:h-[115px] xl:h-[220px]">
+          <Image loading="lazy" src="/assets/wall_of_blocks.svg" className=" object-bottom" alt="Wall of blocks" fill />
         </div>
       </div>
     </section>

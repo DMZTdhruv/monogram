@@ -31,14 +31,50 @@ body {
   }
 }
 @media (max-width: 1280px) and (orientation: portrait) {
-  .responsive_height{
+  .responsive_height {
     height: 100svh;
-    min-height: 800px;  /* Use 100svh for portrait */
+    min-height: 800px; /* Use 100svh for portrait */
   }
 }
 
 @media (max-width: 1280px) and (orientation: landscape) {
-  .responsive_height{
+  .responsive_height {
     min-height: 1000px; /* Use 800px for landscape */
   }
 }
+
+canvas {
+  rotate: -35deg;
+}
+
+.gradient-background {
+  /* background: linear-gradient(25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%); */
+
+  background: linear-gradient(-25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%);
+  border-radius: 68px;
+  background-blend-mode: color-dodge;
+}
+
+.custom-gradient {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 68px;
+}
+
+.custom-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%);
+  z-index: 1;
+  backdrop-filter: blur(100px);
+}
+
+/* .custom-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  backdrop-filter: blur(100px);
+} */

@@ -1,69 +1,67 @@
-import Image from "next/image";
-import "./scoreSection.css";
 import { animatedScores } from "@/constant";
+import "./scoreSection.css";
+import Image from "next/image";
 
-export default function ScoreComponent() {
-  const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]";
+const ScoreSection = () => {
+  const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border border-dashed border-[#E8E8E8]/20";
 
   return (
-    <section className="relative z-1 bg-[#151515] h-auto sm:h-[1300px] md:h-[1500px] lg:h-[2000px]">
-      {/* card */}
-      <div className="w-[90vw] sm:w-[80vw] md:w-[90vw] lg:w-[950px] xl:w-[1230px] mx-auto z-10 gradient-border flex flex-col backdrop-blur-xl items-center text-[#EFFFE2] translate-y-[-100px]  overflow-hidden">
-        <h2 className="text-4xl mix-blend-color-dodge tracking-[-0.03em]  pb-8 sm:pb-12 md:pb-16 lg:pb-[45px] sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[76px] text-center mt-8 sm:mt-12 md:mt-16 lg:mt-[120px] font-black leading-[100%]">
-          top audit scores
-        </h2>
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-[73px] my-8 sm:my-10 md:my-12 lg:my-16">
-          {animatedScores.map((item, index) => (
-            <div
-              key={item.blinkDelay}
-              className="w-[80px] sm:w-[140px] md:w-[180px] lg:w-[212px] relative aspect-square"
-            >
-              <span
-                className={`text-2xl sm:text-4xl md:text-5xl lg:text-[63px] green_glow--shadow absolute top-1/2 left-1/2 font-bold -translate-y-1/2 -translate-x-1/2 blink-animation blink-delay-${item.blinkDelay} z-10`}
-              >
-                {item.score}
-              </span>
-              <div className="relative w-full h-full">
-                <Image
-                  alt="ellipse"
-                  src="/assets/ellipse.svg"
-                  fill
-                  sizes="(max-width: 640px) 80px, (max-width: 768px) 140px, (max-width: 1024px) 180px, 212px"
-                  className={`object-contain scale-[1.65] blink-animation blink-delay-${item.blinkDelay} ${index === 2 ? "opacity-30" : "opacity-100"} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
-                />
-              </div>
+    <section className="max-h-[1799px] xl:h-[1799px] h-auto relative w-full bg-[#151515]">
+      <div className="gradientCard max-w-[1204px] relative z-[1] xl:w-[1204px] w-[90vw] max-h-[1328px] xl:h-[1328px] h-auto mx-auto translate-y-[-100px] ">
+        <div className="relative z-[2]">
+          <h2 className="text-[#EFFFE2] pt-[60px] sm:pt-[100px] lg:pt-[120px] text-3xl sm:text-4xl md:text-5xl lg:text-[70px] xl:text-[76px] text-center mt-4 sm:mt-8 md:mt-12 lg:mt-[120px] font-black leading-[100%]">
+            top audit scores
+          </h2>
+          <div className="scores">
+            <div className="grid grid-cols-2 text-white w-fit mx-auto xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-[70px] my-6 sm:my-8 md:my-10 lg:my-16">
+              {animatedScores.map((item, index) => (
+                <div
+                  key={item.blinkDelay}
+                  className="w-[80px] sm:w-[140px] md:w-[180px] lg:w-[212px] relative aspect-square"
+                >
+                  <span
+                    className={`text-xl sm:text-3xl md:text-4xl lg:text-[63px] score-glow-shadow absolute top-1/2 left-1/2 font-bold -translate-y-1/2 -translate-x-1/2 blink-animation blink-delay-${item.blinkDelay} z-10`}
+                  >
+                    {item.score}
+                  </span>
+                  <div className="relative w-full h-full flex justify-center items-center">
+                    <Image
+                      alt="ellipse"
+                      src="/assets/ellipse.svg"
+                      fill
+                      sizes="(max-width: 640px) 80px, (max-width: 768px) 140px, (max-width: 1024px) 180px, 212px"
+                      className={`object-contain scale-[1.6] blink-animation blink-delay-${item.blinkDelay} ${index === 2 ? "opacity-30" : "opacity-100"} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-
-        <div className="px-4 relative sm:px-6 md:px-8 lg:px-16 pb-12 sm:pb-16 md:pb-20 lg:pb-[220px] pt-8 sm:pt-12 md:pt-16 lg:pt-[75px]">
-          <p className="max-w-[756px]  font-light tracking-[0.015em] text-[#C7C7C7] text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-4 sm:gap-6 md:gap-[43px] leading-[42.12px]">
-            <span className=" leading-relaxed block  mix-blend-color-dodge relative z-[100] ">
+          </div>
+          <p className="max-w-[756px] font-[400] pt-6 sm:pt-8 md:pt-10 lg:pt-[70px] mx-auto px-4 sm:px-8 lg:px-0  pb-[60px] sm:pb-[100px] lg:pb-0 tracking-[0.015em] text-gradient text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 leading-[42.12px]">
+            <span className="leading-relaxed block text-gradient relative z-[100]">
               Search engines, business stakeholders, and end-users gauge a website&apos;s value using metric tools like
               Google Lighthouse, which measures site performance, SEO, and accessibility.
             </span>
-            <span className=" leading-relaxed block  mix-blend-color-dodge relative z-[100] ">
+            <span className="leading-relaxed block text-gradient relative z-[100]">
               Performance is one of the most difficult scores to get to 100. This is especially true in a time when
               users demand JavaScript-heavy, highly-interactive web experiences.
             </span>
-            <span className=" leading-relaxed block  mix-blend-color-dodge relative z-[100] ">
+            <span className="leading-relaxed block text-gradient relative z-[100]">
               A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher
               search-engine ranking and a more positive, responsive end-user experience.
             </span>
           </p>
         </div>
+        <div className="gradientBackground absolute backdrop-blur-xl z-[-1] inset-0 rounded-[68px]" />
       </div>
-
-      {/* border */}
-      <div className="flex select-none absolute left-[50%] opacity-20  -translate-x-1/2 top-0 w-full h-full max-w-[1900px] mx-auto lg:px-[100px] md:px-[20px] px-[16px]">
-        <div className={`${defaultBorderClassname}  md:border-x border-r border-1 `} />
-        <div className={`${defaultBorderClassname}  md:border-r  border-1 `} />
-        <div className={`${defaultBorderClassname}  `} />
-        <div className={`${defaultBorderClassname}  md:border-x border-1 border-l border-1`} />
+      <div className="flex select-none h-full absolute z-[0] top-0 max-w-[1500px] w-full left-[50%] -translate-x-1/2 lg:px-[100px] md:px-[60px] px-[16px]">
+        <div className={`${defaultBorderClassname} md:border-x border-r border-1`} />
+        <div className={`${defaultBorderClassname} md:border-r border-1`} />
+        <div className={`${defaultBorderClassname}`} />
+        <div className={`${defaultBorderClassname} md:border-x border-1 border-l border-1`} />
       </div>
-
-      <div className="flex pb-[50px] sm:pb-[0px] mt-12 relative z-[1] transition-all sm:mt-16 md:mt-20 lg:mt-[150px] flex-col items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[30px] text-white">
-        <p className="text-sm text-center sm:text-xl md:text-2xl">
+      <div className="flex translate-y-[-50px] py-6 sm:py-12 md:py-16 lg:mt-[150px] lg:pb-0 relative z-[1] transition-all flex-col items-center gap-2 sm:gap-4 md:gap-6 lg:gap-[30px] text-white">
+        <p className="text-xs sm:text-sm md:text-base lg:text-xl text-center">
           This is a design test by &#123;&#123;Dhruv&#125;&#125; for Monogram.
         </p>
         <svg
@@ -83,4 +81,6 @@ export default function ScoreComponent() {
       </div>
     </section>
   );
-}
+};
+
+export default ScoreSection;

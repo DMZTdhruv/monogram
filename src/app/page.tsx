@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import HeroSection from "@/section/hero_section/heroSection";
-// dynamically importing / code splitting, this is done to improve the performance and make web page load at fast rate 
+// dynamically importing / code splitting, this is done to improve the performance and make web page load at fast rate
 const JavascriptSection = dynamic(() => import("@/section/javascript_section/javascriptSection"));
 const FallingIcons = dynamic(() => import("@/section/fallingIcons_section/fallingIcon"));
 const MarkUpSection = dynamic(() => import("@/section/markup_section/markup"));
