@@ -1,8 +1,8 @@
 // the code visual for the retroComputer
 
-// why did I do this? well because I wanted to make a blink animation of code but the svg don't support blurring background like how we do with backdrop filter in html 
-// elements so I decided to use a png which had that fake blur, and it is now a webp format for optimized image size, and I created a fake screen similar to retro computer 
-// and used this string of code to display that so I decided to use a png which is now a webp for optimized image size, and I created a screen similar to retro computer and 
+// why did I do this? well because I wanted to make a blink animation of code but the svg don't support blurring background like how we do with backdrop filter in html
+// elements so I decided to use a png which had that fake blur, and it is now a webp format for optimized image size, and I created a fake screen similar to retro computer
+// and used this string of code to display that so I decided to use a png which is now a webp for optimized image size, and I created a screen similar to retro computer and
 // used this string of code to display that visual blinking retro code
 export const codeString = `
   import Document, { Html, Head, Main, NextScript } from 'next/document';
@@ -38,8 +38,8 @@ export const codeString = `
 // spin duration defines the speed of each animated score
 // and direction basically defines the direction
 export const animatedScores = [
-  { score: 100, blinkDelay: 0, spinDuration: 10, spinDirection: "clockwise" },
-  { score: 100, blinkDelay: 1, spinDuration: 12, spinDirection: "counterclockwise" },
-  { score: 100, blinkDelay: 2, spinDuration: 8, spinDirection: "clockwise" },
-  { score: 100, blinkDelay: 3, spinDuration: 15, spinDirection: "counterclockwise" },
+  { score: 100, blinkDelay: 0, spinDuration: 10, spinDirection: "clockwise", opacity: 100 },
+  { score: 100, blinkDelay: 1, spinDuration: 12, spinDirection: "counterclockwise", opacity: 100 },
+  { score: 100, blinkDelay: 2, spinDuration: 8, spinDirection: "clockwise", opacity: 30 },
+  { score: 100, blinkDelay: 3, spinDuration: 15, spinDirection: "counterclockwise", opacity: 100 },
 ];
