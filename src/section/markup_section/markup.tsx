@@ -6,10 +6,9 @@ const MarkUpSection = () => {
   return (
     <section className="relative w-full overflow-hidden ">
       <div className="relative max-w-7xl  xl:h-[1500px] md:h-[1500px] sm:h-[1200px] xl:block flex flex-col items-center justify-center   mx-auto responsive_height xl:p-0 lg:px-[50px]">
-
         <div className="text-center xl:mt-[200px] xl:text-left lg:pt-[213px] ">
           <h1 className="font-[900] xl:-ml-[10px] tracking-[-0.047em] text-[50px] md:text-[100px] lg:text-[133px]">
-          markup
+            markup
           </h1>
 
           <p className="w-full text-[#414141] font-[400] tracking-[0.5%] xl:w-[480px] mt-[10px] md:mt-[20px] lg:mt-[45px] px-[16px] sm:px-[100px]  lg:px-0  md:text-[18px] lg:text-[24px] leading-snug lg:leading-[1.65]">
@@ -43,7 +42,13 @@ const MarkUpSection = () => {
       </div>
       <div className="w-full bottom-0 absolute left-[50%] -translate-x-1/2 max-w-[1920px] ">
         <div className="relative w-full  h-[50px] lg:h-[150px] md:h-[115px] xl:h-[220px]">
-          <Image loading="lazy" src="/assets/wall_of_blocks.svg" className=" object-bottom scale-[1.07]" alt="Wall of blocks" fill />
+          <Image
+            loading="lazy"
+            src="/assets/wall_of_blocks.svg"
+            className=" object-bottom scale-[1.07]"
+            alt="Wall of blocks"
+            fill
+          />
         </div>
       </div>
     </section>
