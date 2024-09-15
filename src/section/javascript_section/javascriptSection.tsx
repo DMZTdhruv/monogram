@@ -9,9 +9,9 @@ const JavascriptSection = () => {
       className="relative z-[1]  lg:h-[893px] md:h-[550px] h-[400px] mt-[41.58px] w-full"
     >
       {/* Intro of the section */}
-      <div className="z-[1] md:space-y-[33px] mx-auto  text-white relative h-full max-w-7xl md:pt-[80px] lg:pt-[200px] xl:pt-[100px] pt-[42px] text-center">
-        <h2 className="font-black md:text-[80px] text-[50px] xl:text-[133px]">javascript</h2>
-        <p className="md:leading-[35px] px-6 font-[300] leading-relaxed md:text-[18px] text-[13px]">
+      <div className="z-[1] md:space-y-[23px] mx-auto  text-white relative h-full max-w-7xl md:pt-[80px] lg:pt-[200px] xl:pt-[70px] pt-[44px] text-center">
+        <h2 className="font-[900] tracking-[-0.035em] md:text-[80px] text-[50px] xl:text-[133px]">javascript</h2>
+        <p className="md:leading-[35px] tracking-wide px-6 font-[200] leading-relaxed md:text-[18px] text-[13px]">
           Statically generated pages are brought to life with client-side
           <br className="hidden sm:block " />
           JavaScript libraries and frameworks, such as Algolia and Next.js.
@@ -28,14 +28,15 @@ const JavascriptSection = () => {
 
       {/* The javascript section or the orange card illustration */}
       <div className="absolute top-0 z-[-1] w-full ">
-        <div className=" lg:h-[893px] mx-auto md:h-[550px] h-[400px] relative max-w-[1397px] lg:w-[90vw] md:w-full  ">
+        <div className=" lg:h-[915px] mx-auto md:h-[550px] h-[400px] max-w-[1427px]  relative xl:min-w-[1427px] lg:w-[90vw] md:w-[95vw] w-[98vw]  ">
           <Image
             fill
             alt="hello world"
-            className="sm:object-contain object-cover"
+            className="sm:object-contain lg:object-contain xl:object-cover"
             src={"/assets/orange_square.webp"}
             quality={90}
             sizes="(max-width: 768px) 400px, (max-width: 1280px) 550px, 100vw"
+            unoptimized={true}
           />
         </div>
       </div>

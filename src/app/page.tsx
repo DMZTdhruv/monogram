@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <JavascriptSection />
       {/* margin-top -200px ensures that this section is which is positioned behind the card, moves slightly up from the bottom of the Javascript section by 200px. Using 'translate' caused unwanted gaps at the bottom, so opting for margin-top provided a cleaner layout. */}
-      <div className="mt-[-200px]">
+      <div className="mt-[-183px]">
         <FallingIcons />
         <MarkUpSection />
       </div>

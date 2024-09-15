@@ -35,6 +35,7 @@ const MarkUpSection = () => {
             src1="/assets/markup_rect_1.webp"
             alt2="markup rectangle 2"
             src2="/assets/markup_rect_2.webp"
+            unoptimized={true}
           />
         </div>
       </div>

@@ -16,9 +16,9 @@ const Cms = () => {
     <div className="w-full text-white ">
       <div className="text-center flex flex-col md:gap-[100px] gap-[50px] mx-auto">
         {/* Section title and description */}
-        <div className="max-w-[730px] lg:pb-[70px] md:pb-[40px] pb-[20px] mx-auto space-y-[30px]">
-          <h2 className="text-[80px] md:text-[120px] lg:text-[133px] font-black tracking-[-0.05em]">api</h2>
-          <p className="text-[13px] leading-[20px] md:leading-[28px] lg:leading-[32px] xl:leading-[38.8px] xl:text-nowrap font-[300] md:text-[16px] lg:text-[18px] xl:text-[24px]">
+        <div className="max-w-[730px] lg:pb-[70px] md:pb-[40px] pb-[20px] mx-auto space-y-[38px]">
+          <h2 className="text-[80px] md:text-[120px] lg:text-[133px] font-black tracking-[-0.035em]">api</h2>
+          <p className="text-[13px] leading-[20px] tracking-[0.023em] md:leading-[28px] lg:leading-[32px] xl:leading-[38.8px] xl:text-nowrap font-[300] md:text-[16px] lg:text-[18px] xl:text-[24px]">
             At build time, a Jamstack website uses data from one or more
             <br className="md:block hidden" />
             &nbsp;APIs to generate markup. These APIs can be a headless CMS
