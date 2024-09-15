@@ -1,9 +1,18 @@
 import Image from "next/image";
 
-const SvelteLogo = () => {
+interface ITypeOfImage {
+  svg: boolean;
+}
+
+const SvelteLogo = ({ svg }: ITypeOfImage) => {
   return (
-    <div className="w-full h-[100px] relative">
-      <Image src={"/assets/SvelteLogo.webp"} className="object-contain" fill alt="Svelte logo" priority />
+    <div draggable={false} className="w-full select-none h-[341px] relative">
+      <Image
+        src={`/assets/logos/svelte.${svg ? "svg" : "webp"}`}
+        className="object-contain"
+        fill
+        alt="svelte js logo"
+      />
     </div>
   );
 };

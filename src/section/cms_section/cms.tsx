@@ -34,16 +34,16 @@ const Cms = () => {
             loading="lazy"
             fill
             draggable={false}
-            src="/assets/glow.webp"
-            className="md:scale-125 scale-110 z-[-1] -translate-y-3 -translate-x-3"
+            src="/assets/glow.svg"
+            className="md:scale-125 scale-110 z-[0] xl:-translate-y-5 lg:-translate-y-6 lg:-translate-x-8 -translate-y-2 xl:-translate-x-14  mix-blend-color-dodge -translate-x-2"
             alt="Glow effect"
           />
           <Image
             loading="lazy"
             fill
             draggable={false}
-            src="/assets/glow_2.webp"
-            className="md:scale-150 scale-125 z-[-1] -translate-y-2 -translate-x-2"
+            src="/assets/glow_2.svg"
+            className="md:scale-150 scale-125  mix-blend-overlay z-[-1] xl:-translate-y-20 -translate-y-4 xl:-translate-x-20 -translate-x-5 lg:-translate-y-6 lg:-translate-x-8"
             alt="Glow gradient effect"
           />
           {/* Render the dynamically loaded 3D globe */}

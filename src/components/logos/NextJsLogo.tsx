@@ -1,9 +1,13 @@
 import Image from "next/image";
 
-const NextJsLogo = () => {
+interface ITypeOfImage {
+  svg: boolean;
+}
+
+const NextJsLogo = ({ svg }: ITypeOfImage) => {
   return (
-    <div className="w-full relative h-[360px]">
-      <Image src={"/assets/NextJsLogo.webp"} className="object-contain" fill alt="NextJs logo" priority />
+    <div draggable={false} className="w-full select-none h-[341px] relative">
+      <Image src={`/assets/logos/nextjs.${svg ? "svg" : "webp"}`} className="object-contain" fill alt="Next js logo" />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import "./scoreSection.css";
 import Image from "next/image";
 
 const ScoreSection = () => {
-  const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border border-dashed border-[#E8E8E8]/20";
+  const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]/20";
 
   return (
     <section className="max-h-[1799px] xl:h-[1799px] h-auto relative w-full bg-[#151515]">
@@ -30,14 +30,14 @@ const ScoreSection = () => {
                       src="/assets/ellipse.svg"
                       fill
                       sizes="(max-width: 640px) 80px, (max-width: 768px) 140px, (max-width: 1024px) 180px, 212px"
-                      className={`object-contain scale-[1.6] blink-animation blink-delay-${item.blinkDelay} ${index === 2 ? "opacity-30" : "opacity-100"} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
+                      className={`object-cover scale-[1.6] blink-animation blink-delay-${item.blinkDelay} ${index === 2 ? "opacity-30" : "opacity-100"} spin-animation spin-${item.spinDirection} spin-duration-${item.spinDuration}`}
                     />
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <p className="text-gradient max-w-[756px] font-[400] pt-6 sm:pt-8 md:pt-10 lg:pt-[70px] mx-auto px-4 sm:px-8 lg:px-0  pb-[60px] sm:pb-[100px] lg:pb-0 tracking-[0.015em] text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 leading-[42.12px]">
+          <p className="text-gradient max-w-[756px] font-[400] pt-6 sm:pt-8 md:pt-10 lg:pt-[70px] mx-auto px-8 sm:px-8 lg:px-0  pb-[60px] sm:pb-[100px] lg:pb-0 tracking-[0.015em] text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 leading-[42.12px]">
             <span className="leading-relaxed block  mix-blend-color-dodge text-[#C7C7C7] relative z-[100]">
               Search engines, business stakeholders, and end-users gauge a website&apos;s value using metric tools like
               Google Lighthouse, which measures site performance, SEO, and accessibility.
@@ -55,9 +55,9 @@ const ScoreSection = () => {
         <div className="gradientBackground absolute backdrop-blur-xl z-[-1] inset-0 rounded-[68px]" />
       </div>
       <div className="flex select-none h-full absolute z-[0] top-0 max-w-[1500px] w-full left-[50%] -translate-x-1/2 lg:px-[100px] md:px-[60px] px-[16px]">
-        <div className={`${defaultBorderClassname} md:border-x border-r border-1`} />
-        <div className={`${defaultBorderClassname} md:border-r border-1`} />
-        <div className={`${defaultBorderClassname}`} />
+        <div className={`${defaultBorderClassname} md:block hidden border-x border-1`} />
+        <div className={`${defaultBorderClassname} border-r `} />
+        <div className={`${defaultBorderClassname} `} />
         <div className={`${defaultBorderClassname} md:border-x border-1 border-l border-1`} />
       </div>
       <div className="flex translate-y-[-50px] py-6 sm:py-12 md:py-16 lg:mt-[150px] lg:pb-0 relative z-[1] transition-all flex-col items-center gap-2 sm:gap-4 md:gap-6 lg:gap-[30px] text-white">

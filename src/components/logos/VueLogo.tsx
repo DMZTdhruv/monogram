@@ -1,9 +1,13 @@
 import Image from "next/image";
 
-const VueLogo = () => {
+interface ITypeOfImage {
+  svg: boolean;
+}
+
+const VueLogo = ({ svg }: ITypeOfImage) => {
   return (
-    <div className="w-full h-[351px] relative">
-      <Image src={"/assets/VueLogo.webp"} className="object-contain" fill alt="vue logo" priority />
+    <div draggable={false} className="w-full select-none h-[341px] relative">
+      <Image src={`/assets/logos/vue.${svg ? "svg" : "webp"}`} className="object-contain" fill alt="vue js logo" />
     </div>
   );
 };

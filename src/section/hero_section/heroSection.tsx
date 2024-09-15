@@ -9,28 +9,29 @@ const HeroSection = () => {
         {/* Hero section intro */}
         <div className="text-center xl:text-left lg:pt-[163px]">
           <h1 className="font-[900] xl:pl-[5px] leading-[100%] text-[50px] md:text-[100px] lg:text-[133px]">
-            <span className="tracking-[-0.025em]">
+            <span className="tracking-[-0.040em]">
               jamstack <br className="block lg:hidden" />{" "}
             </span>
             <span className="gradient-text leading-[100%]">101</span>
           </h1>
 
-          <p className="w-full font-[300] tracking-[0.5%] xl:w-[509px] mt-[35px] px-[16px] sm:px-[100px] lg:px-0 pt-[20px] lg:ml-[55px] text-body-text-secondary text-base md:text-lg leading-[28px] lg:leading-[35px]">
+          <p className="w-full font-[300] tracking-[0.5%] xl:w-[509px] mt-[10px] md:mt-[20px] lg:mt-[55px] px-[16px] sm:px-[100px] lg:px-0  lg:ml-[55px] text-body-text-secondary text-base md:text-lg leading-snug lg:leading-[35px]">
             A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher
             search-engine ranking and a more positive, responsive end-user experience.
           </p>
         </div>
 
         {/* mouse image */}
-        <div className="hidden xl:block relative w-[84px] h-[580px] left-[256px] mt-[78px]">
+        <div className="hidden xl:block relative w-[84px] h-[580px] left-[248px] mt-[55px]">
           <Image
             priority
             alt="mouse"
-            src="/assets/mouse_line.webp"
+            src="/assets/mouse_line.svg"
             fill
             sizes="84px"
             quality={90}
             className="object-contain"
+            unoptimized
           />
         </div>
 

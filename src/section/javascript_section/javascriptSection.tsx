@@ -28,11 +28,11 @@ const JavascriptSection = () => {
 
       {/* The javascript section or the orange card illustration */}
       <div className="absolute top-0 z-[-1] w-full ">
-        <div className=" lg:h-[915px] mx-auto md:h-[550px] h-[400px] max-w-[1427px]  relative xl:min-w-[1427px] lg:w-[90vw] md:w-[95vw] w-[98vw]  ">
+        <div className=" lg:h-[915px] mx-auto md:h-[550px] h-[400px] max-w-[1427px]  relative xl:min-w-[1427px] lg:w-[90vw] md:w-[95vw] w-full  ">
           <Image
             fill
             alt="hello world"
-            className="sm:object-contain lg:object-contain xl:object-cover"
+            className=" object-cover sm:object-contain lg:object-contain xl:object-cover"
             src={"/assets/orange_square.webp"}
             quality={90}
             sizes="(max-width: 768px) 400px, (max-width: 1280px) 550px, 100vw"

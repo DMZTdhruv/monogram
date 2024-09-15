@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import NextJsLogo from "@/components/logos/NextJsLogo";
 import ReactLogo from "@/components/logos/ReactLogo";
 import VueLogo from "@/components/logos/VueLogo";
+import SvelteLogo from "@/components/logos/SvelteLogo";
 
 // Dynamically import components with ssr false,
 // As we are relying on client side interaction for the 3d model and the infinite icon falling effect we are using ssr false,
@@ -15,7 +16,7 @@ const Cms = dynamic(() => import("../cms_section/cms"), {
 
 const FallingIcons = () => {
   const defaultBorderClassname = "flex-1 h-full relative overflow-hidden border-dashed border-[#E8E8E8]/20";
-
+  const svg = false;
   return (
     <section
       id="Falling icon"
@@ -28,28 +29,31 @@ const FallingIcons = () => {
           className="flex select-none relative z-[0] h-full top-0 max-w-[1500px] mx-auto lg:px-[100px] md:px-[60px] px-[16px]"
         >
           {/* First column (fastest speed) */}
-          <InfiniteColumnEffect className={`${defaultBorderClassname} md:block hidden border-x border-1`} speed={0.175}>
-            <ReactLogo />
-            <NextJsLogo />
-            <VueLogo />
+        <InfiniteColumnEffect className={`${defaultBorderClassname} md:block hidden border-x border-1`} speed={0.175}>
+            <ReactLogo svg={svg} />
+            <NextJsLogo svg={svg} />
+            <VueLogo svg={svg} />
           </InfiniteColumnEffect>
           {/* Second column (slower speed) */}
           <InfiniteColumnEffect className={`${defaultBorderClassname}`} speed={0.075}>
-            <VueLogo />
-            <ReactLogo />
-            <NextJsLogo />
+            <VueLogo svg={svg} />
+            <ReactLogo svg={svg} />
+            <SvelteLogo svg={svg} />
           </InfiniteColumnEffect>
           {/* Third column (slowest speed) */}
           <InfiniteColumnEffect className={`${defaultBorderClassname} border-l border-1`} speed={0.05}>
-            <ReactLogo />
-            <VueLogo />
-            <NextJsLogo />
+            <ReactLogo svg={svg} />
+            <VueLogo svg={svg} />
+            <NextJsLogo svg={svg} />
           </InfiniteColumnEffect>
           {/* Fourth column (fast but slower than the first column) */}
-          <InfiniteColumnEffect className={`${defaultBorderClassname} md:border-x border-1 border-l border-1`} speed={0.125}>
-            <VueLogo />
-            <NextJsLogo />
-            <ReactLogo />
+          <InfiniteColumnEffect
+            className={`${defaultBorderClassname} md:border-x border-1 border-l border-1`}
+            speed={0.125}
+          >
+            <SvelteLogo svg={svg} />
+            <NextJsLogo svg={svg} />
+            <ReactLogo svg={svg} />
           </InfiniteColumnEffect>
         </div>
       </div>
@@ -59,7 +63,7 @@ const FallingIcons = () => {
         <Cms />
       </div>
       {/* Decorative white wave element to visually separate sections */}
-      <div className="absolute max-w-[2000px]  left-1/2 -translate-x-1/2 w-full z-[0] bottom-[-2px]">
+      <div className="absolute max-w-[2000px]  left-1/2 -translate-x-1/2 w-full z-[0] lg:bottom-[-2px]  sm:bottom-[-80px] bottom-0">
         <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg">
           <title>wave</title>
           <path

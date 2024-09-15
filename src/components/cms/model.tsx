@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { fragmentShader, vertexShader } from "./shaders";
 import type { GLTF } from "three-stdlib";
@@ -31,13 +32,23 @@ export const Model = () => {
     [uniform: string]: THREE.IUniform<number | THREE.Color>;
   }>({
     time: { value: 0 },
-    colorA: { value: new THREE.Color("#00ffff") },
-    colorB: { value: new THREE.Color("#ff00ff") },
-    colorC: { value: new THREE.Color("#ffafaf") },
+    colorA: { value: new THREE.Color("#01A6DC") },
+    colorB: { value: new THREE.Color("#8801E4") },
+    colorC: { value: new THREE.Color("#F5CBE1") },
+  });
+
+  // Ref for the group to apply rotation
+  const groupRef = useRef<THREE.Group>(null);
+
+  // Use useFrame to apply continuous rotation
+  useFrame((state, delta) => {
+    if (groupRef.current) {
+      groupRef.current.rotation.y += delta * 0.1; // Adjust rotation speed as needed
+    }
   });
 
   return (
-    <group scale={[3, 3, 3]} dispose={null}>
+    <group ref={groupRef} scale={[3, 3, 3]} dispose={null} rotation={[THREE.MathUtils.degToRad(-23), 0, 0]}>
       {/* Main sphere with custom shader material */}
       <mesh castShadow receiveShadow geometry={nodes.Sphere.geometry}>
         <shaderMaterial uniforms={uniforms.current} vertexShader={vertexShader} fragmentShader={fragmentShader} />
