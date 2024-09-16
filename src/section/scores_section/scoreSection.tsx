@@ -7,8 +7,8 @@ const ScoreSection = () => {
 
   return (
     <section className="max-h-[1799px] xl:h-[1799px] h-auto relative w-full bg-[#151515]">
-      <div className="gradientCard max-w-[1204px] relative z-[1] xl:w-[1204px] w-[90vw] max-h-[1328px] xl:h-[1328px] -translate-y-[100px] h-auto mx-auto ">
-        <div className="relative z-[2]">
+      <div className="gradientCard max-w-[1204px] relative z-[1] backdrop-blur-md xl:w-[1204px] w-[90vw] max-h-[1328px] xl:h-[1328px] -translate-y-[100px] h-auto mx-auto ">
+        <div className="relative z-[2]  mix-blend-color-dodge">
           <h2 className="text-[#EFFFE2] pt-[60px] sm:pt-[100px] lg:pt-[120px] text-3xl sm:text-4xl md:text-5xl lg:text-[70px] xl:text-[76px] text-center font-black leading-[100%]">
             top audit scores
           </h2>
@@ -20,7 +20,7 @@ const ScoreSection = () => {
                   className="w-[80px] sm:w-[140px] md:w-[180px] lg:w-[212px] relative aspect-square"
                 >
                   <span
-                    className={`text-xl sm:text-3xl md:text-4xl lg:text-[63px] score-glow-shadow absolute top-1/2 left-1/2 font-bold -translate-y-1/2 -translate-x-1/2 blink-animation blink-delay-${item.blinkDelay} z-10`}
+                    className={`text-xl text-glow-shadow text-[#EFFFE2] sm:text-3xl md:text-4xl lg:text-[63px] score-glow-shadow absolute top-1/2 left-1/2 font-bold -translate-y-1/2 -translate-x-1/2 blink-animation blink-delay-${item.blinkDelay} z-10`}
                   >
                     {item.score}
                   </span>
@@ -38,15 +38,15 @@ const ScoreSection = () => {
             </div>
           </div>
           <p className="text-gradient max-w-[756px] font-[400] pt-6 sm:pt-8 md:pt-10 lg:pt-[70px] mx-auto px-8 sm:px-8 lg:px-0  pb-[60px] sm:pb-[100px] lg:pb-0 tracking-[0.015em] text-sm sm:text-base md:text-lg lg:text-[25px] flex flex-col gap-2 sm:gap-4 md:gap-6 lg:gap-8 leading-[42.12px]">
-            <span className="leading-relaxed block  mix-blend-color-dodge text-[#C7C7C7] relative z-[100]">
+            <span className="leading-relaxed block  text-[#C7C7C7] relative z-[100]">
               Search engines, business stakeholders, and end-users gauge a website&apos;s value using metric tools like
               Google Lighthouse, which measures site performance, SEO, and accessibility.
             </span>
-            <span className="leading-relaxed block  mix-blend-color-dodge text-[#C7C7C7] relative z-[100]">
+            <span className="leading-relaxed block   text-[#C7C7C7] relative z-[100]">
               Performance is one of the most difficult scores to get to 100. This is especially true in a time when
               users demand JavaScript-heavy, highly-interactive web experiences.
             </span>
-            <span className="leading-relaxed block mix-blend-color-dodge text-[#C7C7C7]  relative z-[100]">
+            <span className="leading-relaxed block  text-[#C7C7C7]  relative z-[100]">
               A Jamstack website, delivering SEO-friendly, lean & clean HTML in milliseconds, promises higher
               search-engine ranking and a more positive, responsive end-user experience.
             </span>

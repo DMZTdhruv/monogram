@@ -1,10 +1,9 @@
 .gradientBackground {
-  background: linear-gradient(-25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%);
+  background: linear-gradient(-25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(93, 187, 70, 0.108) 62.25%);
   z-index: -1;
   border-radius: 32px;
 }
 
-
 .gradientCard {
   position: relative;
   border-radius: 68px;
@@ -83,4 +82,8 @@
   .gradientCard::before {
     border-radius: 68px;
   }
+}
+
+.text-glow-shadow {
+  text-shadow: 0px 0px 61px #53fb2a, 0px 0px 42px #e9e11f, 0px 0px 12px #53fb2a;
 }
