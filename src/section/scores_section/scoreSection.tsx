@@ -7,7 +7,7 @@ const ScoreSection = () => {
 
   return (
     <section className="max-h-[1799px] xl:h-[1799px] h-auto relative w-full bg-[#151515]">
-      <div className="gradientCard max-w-[1204px] relative z-[1] backdrop-blur-md xl:w-[1204px] w-[90vw] max-h-[1328px] xl:h-[1328px] -translate-y-[100px] h-auto mx-auto ">
+      <div className="gradientCard max-w-[1204px] relative z-[1] backdrop-blur-2xl xl:w-[1204px] w-[90vw] max-h-[1328px] xl:h-[1328px] -translate-y-[100px] h-auto mx-auto ">
         <div className="relative z-[2]  mix-blend-color-dodge">
           <h2 className="text-[#EFFFE2] pt-[60px] sm:pt-[100px] lg:pt-[120px] text-3xl sm:text-4xl md:text-5xl lg:text-[70px] xl:text-[76px] text-center font-black leading-[100%]">
             top audit scores
@@ -24,7 +24,7 @@ const ScoreSection = () => {
                   >
                     {item.score}
                   </span>
-                  <div className="relative w-full h-full flex justify-center items-center">
+                  <div className="relative infinite-rotate w-full h-full flex justify-center items-center">
                     <Image
                       alt="ellipse"
                       src="/assets/ellipse.svg"
