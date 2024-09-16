@@ -63,7 +63,7 @@ const FallingIcons = () => {
         <Cms />
       </div>
       {/* Decorative white wave element to visually separate sections */}
-      <div className="absolute max-w-[2000px]  left-1/2 -translate-x-1/2 w-full z-[0] lg:bottom-[-2px]  sm:bottom-[-80px] bottom-0">
+      <div className="absolute max-w-[2000px]  left-1/2 -translate-x-1/2 w-full z-[0] lg:bottom-[-2px]  sm:bottom-[-80px] -bottom-[1px]">
         <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg">
           <title>wave</title>
           <path
