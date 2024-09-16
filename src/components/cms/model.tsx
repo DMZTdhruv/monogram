@@ -5,6 +5,7 @@ import { MeshTransmissionMaterial, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { fragmentShader, vertexShader } from "./shaders";
 import type { GLTF } from "three-stdlib";
+import { useFrame } from "@react-three/fiber";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -34,15 +35,8 @@ export const Model = () => {
     colorC: { value: new THREE.Color("#F5CBE1") },
   });
 
-  const groupRef = useRef<THREE.Group>(null);
-
-  // Add refs for the directional lights
-  const leftLightRef = useRef<THREE.DirectionalLight>(null);
-  const rightLightRef = useRef<THREE.DirectionalLight>(null);
-
-  // Optionally, you can use useHelper to visualize the lights
-  // useHelper(leftLightRef, THREE.DirectionalLightHelper, 1, 'red');
-  // useHelper(rightLightRef, THREE.DirectionalLightHelper, 1, 'blue');
+  const outerGroupRef = useRef<THREE.Group>(null);
+  const innerGroupRef = useRef<THREE.Group>(null);
 
   const BlendMaterial = ({ color }: { color: string }) => (
     <MeshTransmissionMaterial
@@ -54,44 +48,56 @@ export const Model = () => {
     />
   );
 
+  useFrame(() => {
+    if (innerGroupRef.current) {
+      innerGroupRef.current.rotation.y += 0.008;
+    }
+  });
+
   return (
     <>
-      {/* Add directional lights */}
-      <directionalLight
-        ref={leftLightRef}
-        position={[-10, 0, 0]}  // Positioned to the left
-        intensity={1}
-        color="#ffffff"
-      />
-      <directionalLight
-        ref={rightLightRef}
-        position={[10, 0, 0]}   // Positioned to the right
-        intensity={1}
-        color="#ffffff"
-      />
-
-      <group dispose={null} ref={groupRef} scale={[10, 10, 10]} rotation={[0, 0, THREE.MathUtils.degToRad(23)]}>
-        <mesh castShadow receiveShadow geometry={nodes.Curve001.geometry} rotation={[Math.PI / 2, 0, 3.13]} scale={1.566}>
-          <BlendMaterial color="#01A6DC" />
-        </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Curve002.geometry}
-          rotation={[Math.PI / 2, 0, 1.564]}
-          scale={1.385}
-        >
-          <BlendMaterial color="#8801E4" />
-        </mesh>
-        <mesh castShadow receiveShadow geometry={nodes.Sphere.geometry} scale={0.307}>
-          <shaderMaterial uniforms={uniforms.current} vertexShader={vertexShader} fragmentShader={fragmentShader} />
-        </mesh>
-        <mesh castShadow receiveShadow geometry={nodes.Curve.geometry} rotation={[Math.PI / 2, 0, -1.567]} scale={1.385}>
-          <BlendMaterial color="#F5CBE1" />
-        </mesh>
-        <mesh castShadow receiveShadow geometry={nodes.Curve009.geometry} rotation={[Math.PI / 2, 0, 0]} scale={1.566}>
-          <BlendMaterial color="#01A6DC" />
-        </mesh>
+      <group ref={outerGroupRef} rotation={[0, 0, THREE.MathUtils.degToRad(23)]}>
+        <group ref={innerGroupRef} scale={[10, 10, 10]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Curve001.geometry}
+            rotation={[Math.PI / 2, 0, 3.13]}
+            scale={1.566}
+          >
+            <BlendMaterial color="#01A6DC" />
+          </mesh>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Curve002.geometry}
+            rotation={[Math.PI / 2, 0, 1.564]}
+            scale={1.385}
+          >
+            <BlendMaterial color="#8801E4" />
+          </mesh>
+          <mesh castShadow receiveShadow geometry={nodes.Sphere.geometry} scale={0.307}>
+            <shaderMaterial uniforms={uniforms.current} vertexShader={vertexShader} fragmentShader={fragmentShader} />
+          </mesh>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Curve.geometry}
+            rotation={[Math.PI / 2, 0, -1.567]}
+            scale={1.385}
+          >
+            <BlendMaterial color="#F5CBE1" />
+          </mesh>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Curve009.geometry}
+            rotation={[Math.PI / 2, 0, 0]}
+            scale={1.566}
+          >
+            <BlendMaterial color="#01A6DC" />
+          </mesh>
+        </group>
       </group>
     </>
   );

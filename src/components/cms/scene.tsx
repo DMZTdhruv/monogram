@@ -8,7 +8,6 @@ const CmsScene = () => {
     <Canvas className="z-[10]">
       <Model />
       <directionalLight color={"#fff"} position={[0, 5, 0]} intensity={0} />
-
       <OrbitControls enablePan={false} enableZoom={false} />
       <Environment preset="studio" />
     </Canvas>
