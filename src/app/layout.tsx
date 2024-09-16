@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-// const inter = Inter({
-//   subsets: ["latin"],
-//   preload: true,
-//   display: "fallback",
-// });
+const inter = Inter({
+  subsets: ["latin"],
+  preload: true,
+  display: "fallback",
+});
 
 // if 4.0
-import localFont from 'next/font/local'
+// import localFont from 'next/font/local'
 
-const inter = localFont({
-  src: '../../public/fonts/inter_font_4.0.ttf',
-  display: 'fallback',
-})
+// const inter = localFont({
+//   src: '../../public/fonts/inter_font_4.0.ttf',
+//   display: 'fallback',
+// })
 
 export const metadata: Metadata = {
   title: "Jamstack 101",
