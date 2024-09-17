@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import "./cms.css";
 import Image from "next/image";
 
 // Dynamically import the 3D globe component to enhance performance
@@ -8,7 +7,7 @@ const CmsGlobe = dynamic(() => import("@/components/cms/scene"), {
   // Turn off server-side rendering for this component
   ssr: false,
   // Loading fallback: displays a 2D circle while the 3D globe loads
-  loading: () => <Image fill src="/assets/circle.webp" alt="3D circle placeholder" />,
+  loading: () => <Image fill src="/assets/circle.svg" unoptimized alt="3D circle placeholder" />,
 });
 
 const Cms = () => {
@@ -35,7 +34,7 @@ const Cms = () => {
             fill
             draggable={false}
             src="/assets/glow.svg"
-            className="md:scale-125 scale-110 z-[0] xl:-translate-y-5 lg:-translate-y-6 lg:-translate-x-8 -translate-y-2 xl:-translate-x-14  mix-blend-color-dodge -translate-x-2"
+            className=" md:scale-125 scale-[1.12] z-[0] xl:-translate-y-5 lg:-translate-y-6 lg:-translate-x-8 -translate-y-2 xl:-translate-x-14  mix-blend-color-dodge -translate-x-2"
             alt="Glow effect"
           />
           <Image
@@ -43,7 +42,7 @@ const Cms = () => {
             fill
             draggable={false}
             src="/assets/glow_2.svg"
-            className="md:scale-150 scale-125  mix-blend-overlay z-[-1] xl:-translate-y-20 -translate-y-4 xl:-translate-x-20 -translate-x-5 lg:-translate-y-6 lg:-translate-x-8"
+            className="md:scale-150 scale-150  mix-blend-overlay z-[-1] xl:-translate-y-20 -translate-y-4 xl:-translate-x-20 -translate-x-5 lg:-translate-y-6 lg:-translate-x-8"
             alt="Glow gradient effect"
           />
           {/* Render the dynamically loaded 3D globe */}
