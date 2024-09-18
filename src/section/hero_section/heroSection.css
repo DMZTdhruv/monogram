@@ -1,7 +1,7 @@
 /* Making the gradient text using the orange_square img */
 .gradient-text {
   text-transform: uppercase;
-  background: url("/assets/text_background.png") 0 0 / cover no-repeat;
+  background: url("/assets/text_background.webp") 0 0 / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 100%;

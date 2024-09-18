@@ -10,37 +10,25 @@
   box-sizing: border-box;
 }
 
-.gradientText1 {
-  background: linear-gradient(-25.39deg, rgba(239, 255, 226, 0.8) 30.54%, rgba(199, 255, 185, 0.87) 70.25%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.gradientText2 {
-  background: linear-gradient(-15.39deg, rgba(239, 255, 226, 0.8) 70.54%, rgba(212, 245, 204, 0.87) 30.25%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+.gradientText1,
+.gradientText2,
 .gradientText3 {
-  background: linear-gradient(-5.39deg, rgba(239, 255, 226, 0.6) 40.54%, rgba(226, 247, 220, 0.7) 60.25%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: transparent; 
 }
 
-@media (max-width: 640px) {
-  .gradientText1 {
-    background: linear-gradient(-25.39deg, rgba(239, 255, 226, 0.8) 50.54%, rgba(199, 255, 185, 0.87) 80.25%);
-  }
+.gradientText1 {
+  background-image: linear-gradient(-25.39deg, rgba(239, 255, 226, 0.8) 30.54%, rgba(199, 255, 185, 0.87) 70.25%);
+}
 
-  .gradientText2 {
-    background: linear-gradient(-15.39deg, rgba(239, 255, 226, 0.8) 80.54%, rgba(212, 245, 204, 0.87) 50.25%);
-  }
+.gradientText2 {
+  background-image: linear-gradient(-15.39deg, rgba(239, 255, 226, 0.8) 70.54%, rgba(212, 245, 204, 0.87) 30.25%);
+}
 
-  .gradientText3 {
-    background: linear-gradient(-5.39deg, rgba(239, 255, 226, 0.6) 60.54%, rgba(226, 247, 220, 0.7) 70.25%);
-  }
+.gradientText3 {
+  background-image: linear-gradient(-5.39deg, rgba(239, 255, 226, 0.6) 40.54%, rgba(226, 247, 220, 0.7) 60.25%);
 }
 
 .gradientCard::before {
