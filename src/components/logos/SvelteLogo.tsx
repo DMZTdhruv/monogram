@@ -8,6 +8,7 @@ const SvelteLogo = ({ svg }: ITypeOfImage) => {
   return (
     <div draggable={false} className="w-full select-none h-[341px] relative">
       <Image
+        priority
         src={`/assets/logos/svelte.${svg ? "svg" : "webp"}`}
         className="object-contain"
         fill

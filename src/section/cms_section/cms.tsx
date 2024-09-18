@@ -7,7 +7,7 @@ const CmsGlobe = dynamic(() => import("@/components/cms/scene"), {
   // Turn off server-side rendering for this component
   ssr: false,
   // Loading fallback: displays a 2D circle while the 3D globe loads
-  loading: () => <Image fill src="/assets/circle.svg" unoptimized alt="3D circle placeholder" />,
+  loading: () => <Image priority fill src="/assets/circle.svg" alt="3D circle placeholder" />,
 });
 
 const Cms = () => {

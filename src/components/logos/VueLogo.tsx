@@ -7,7 +7,7 @@ interface ITypeOfImage {
 const VueLogo = ({ svg }: ITypeOfImage) => {
   return (
     <div draggable={false} className="w-full select-none h-[341px] relative">
-      <Image src={`/assets/logos/vue.${svg ? "svg" : "webp"}`} className="object-contain" fill alt="vue js logo" />
+      <Image priority src={`/assets/logos/vue.${svg ? "svg" : "webp"}`} className="object-contain" fill alt="vue js logo" />
     </div>
   );
 };

@@ -12,6 +12,7 @@ const ReactLogo = ({ svg }: ITypeOfImage) => {
         className="object-contain"
         fill
         alt="React logo"
+        priority
       />
     </div>
   );

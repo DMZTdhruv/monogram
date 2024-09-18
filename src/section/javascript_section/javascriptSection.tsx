@@ -36,7 +36,7 @@ const JavascriptSection = () => {
             src={"/assets/orange_square.webp"}
             quality={90}
             sizes="(max-width: 768px) 400px, (max-width: 1280px) 550px, 100vw"
-            unoptimized={true}
+            unoptimized
           />
         </div>
       </div>
@@ -44,7 +44,7 @@ const JavascriptSection = () => {
       {/* Retro computer illustration with code snippet */}
       <div className="absolute left-1/2 xl:scale-100 lg:scale-75 -translate-y-1/2 scale-[0.4] -translate-x-1/2 top-[98%]">
         <div className="w-[803px] h-[808px] relative">
-          <Image fill unoptimized alt="retro computer" loading="lazy" src="/assets/retro_computer.webp" />
+          <Image fill unoptimized alt="retro computer" priority src="/assets/retro_computer.webp" />
           {/* fake screen */}
           <div className="screen top-[52px] left-[81px] absolute z-10 px-[47px] pt-[47px] overflow-hidden text-[#44DBFF] w-[642px] h-[430px] bg-[#1A1A1A] text-[8px] leading-[15px] rounded-[30px]">
             <div className="relative">

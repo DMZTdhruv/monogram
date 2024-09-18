@@ -7,7 +7,13 @@ interface ITypeOfImage {
 const NextJsLogo = ({ svg }: ITypeOfImage) => {
   return (
     <div draggable={false} className="w-full select-none h-[341px] relative">
-      <Image src={`/assets/logos/nextjs.${svg ? "svg" : "webp"}`} className="object-contain" fill alt="Next js logo" />
+      <Image
+        priority
+        src={`/assets/logos/nextjs.${svg ? "svg" : "webp"}`}
+        className="object-contain"
+        fill
+        alt="Next js logo"
+      />
     </div>
   );
 };
